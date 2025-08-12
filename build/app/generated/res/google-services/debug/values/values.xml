@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">84088394903</string>
+    <string name="google_api_key" translatable="false">AIzaSyAl72z4t2-nuag2Kde-V-0bFSjTEvGxQ1I</string>
+    <string name="google_app_id" translatable="false">1:84088394903:android:0491f7998a4c0514ed05d2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAl72z4t2-nuag2Kde-V-0bFSjTEvGxQ1I</string>
+    <string name="google_storage_bucket" translatable="false">fasto-10844.firebasestorage.app</string>
+    <string name="project_id" translatable="false">fasto-10844</string>
+</resources>

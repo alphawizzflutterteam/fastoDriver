@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/mipmap_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/mipmap/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/raw_test.mp3.flat",
+        "source": "com.fasto.driver.app-main-61:/raw/test.mp3"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/raw_keep.xml.flat",
+        "source": "com.fasto.driver.app-main-61:/raw/keep.xml"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/drawable_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/drawable/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/xml_provider_paths.xml.flat",
+        "source": "com.fasto.driver.app-main-61:/xml/provider_paths.xml"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.fasto.driver.app-main-61:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.fasto.driver.app-merged_res-67:/drawable-v21_launch_background.xml.flat",
+        "source": "com.fasto.driver.app-main-61:/drawable-v21/launch_background.xml"
+    }
+]

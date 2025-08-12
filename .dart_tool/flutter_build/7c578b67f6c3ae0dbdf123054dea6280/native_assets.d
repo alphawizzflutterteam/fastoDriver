@@ -1,0 +1,1 @@
+ D:\\FastoDriver\\.dart_tool\\flutter_build\\7c578b67f6c3ae0dbdf123054dea6280\\native_assets.yaml: 

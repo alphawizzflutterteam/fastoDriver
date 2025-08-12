@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.fasto.driver.app-mergeDebugResources-65:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Alphawizz\\.gradle\\caches\\transforms-3\\b8e842baa1af6642fe2d19de451e8435\\transformed\\appcompat-1.6.1\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    }
+                }
+            ]
+        }
+    ]
+}

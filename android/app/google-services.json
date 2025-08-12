@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "84088394903",
+    "project_id": "fasto-10844",
+    "storage_bucket": "fasto-10844.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84088394903:android:0491f7998a4c0514ed05d2",
+        "android_client_info": {
+          "package_name": "com.fasto.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl72z4t2-nuag2Kde-V-0bFSjTEvGxQ1I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
