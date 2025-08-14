@@ -12,80 +12,80 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
-14-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:5:22-64
+14-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
+14-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:5:22-64
 15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-15-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:4:5-77
-15-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:4:22-74
+15-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:4:5-77
+15-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:4:22-74
 16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
-16-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:6:5-81
-16-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:6:22-78
+16-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:6:5-81
+16-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:6:22-78
 17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
-17-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:8:5-80
-17-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:8:22-77
+17-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:8:5-80
+17-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:8:22-77
 18    <!-- <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> -->
 19    <uses-permission android:name="android.permission.CAMERA" />
-19-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:11:5-64
-19-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:11:22-62
+19-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:11:5-64
+19-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:11:22-62
 20    <uses-permission android:name="android.permission.WAKE_LOCK" />
-20-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:12:5-68
-20-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:12:22-65
+20-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:12:5-68
+20-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:12:22-65
 21    <uses-permission android:name="android.permission.VIBRATE" />
-21-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:13:5-66
-21-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:13:22-63
+21-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:13:5-66
+21-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:13:22-63
 22
 23    <uses-feature
-23-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:14:5-85
+23-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:14:5-85
 24        android:name="android.hardware.camera"
-24-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:14:20-58
+24-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:14:20-58
 25        android:required="true" />
-25-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:14:60-83
+25-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:14:60-83
 26
 27    <queries>
-27-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:15:5-36:15
+27-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:15:5-36:15
 28
 29        <!-- If your app opens https URLs -->
 30        <intent>
-30-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:17:9-20:18
+30-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:17:9-20:18
 31            <action android:name="android.intent.action.VIEW" />
-31-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
-31-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+31-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+31-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 32
 33            <data android:scheme="https" />
-33-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
-33-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+33-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+33-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 34        </intent>
 35        <!-- If your app makes calls -->
 36        <intent>
-36-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:22:9-25:18
+36-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:22:9-25:18
 37            <action android:name="android.intent.action.DIAL" />
-37-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:23:13-65
-37-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:23:21-62
+37-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:23:13-65
+37-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:23:21-62
 38
 39            <data android:scheme="tel" />
-39-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
-39-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+39-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+39-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 40        </intent>
 41        <!-- If your sends SMS messages -->
 42        <intent>
-42-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:27:9-30:18
+42-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:27:9-30:18
 43            <action android:name="android.intent.action.SENDTO" />
-43-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:28:13-67
-43-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:28:21-64
+43-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:28:13-67
+43-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:28:21-64
 44
 45            <data android:scheme="smsto" />
-45-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
-45-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+45-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+45-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 46        </intent>
 47        <!-- If your app sends emails -->
 48        <intent>
-48-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:32:9-35:18
+48-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:32:9-35:18
 49            <action android:name="android.intent.action.SEND" />
-49-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:33:13-65
-49-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:33:21-62
+49-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:33:13-65
+49-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:33:21-62
 50
 51            <data android:mimeType="*/*" />
-51-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+51-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 52        </intent>
 53
 54        <package android:name="com.facebook.katana" /> <!-- For browser content -->
@@ -94,16 +94,16 @@
 55        <intent>
 55-->[com.google.android.gms:play-services-ads-api:24.1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\e27aa4526ed626298054bf4b09883478\transformed\jetified-play-services-ads-api-24.1.0\AndroidManifest.xml:38:9-44:18
 56            <action android:name="android.intent.action.VIEW" />
-56-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
-56-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+56-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+56-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 57
 58            <category android:name="android.intent.category.BROWSABLE" />
 58-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:33:17-78
 58-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:33:27-75
 59
 60            <data android:scheme="https" />
-60-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
-60-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+60-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+60-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 61        </intent> <!-- End of browser content -->
 62        <!-- For CustomTabsService -->
 63        <intent>
@@ -120,61 +120,61 @@
 68-->[com.google.android.gms:play-services-ads-api:24.1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\e27aa4526ed626298054bf4b09883478\transformed\jetified-play-services-ads-api-24.1.0\AndroidManifest.xml:53:21-64
 69
 70            <data android:mimeType="vnd.android.cursor.dir/event" />
-70-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+70-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 71        </intent>
 72        <intent>
 72-->[com.google.android.gms:play-services-ads-api:24.1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\e27aa4526ed626298054bf4b09883478\transformed\jetified-play-services-ads-api-24.1.0\AndroidManifest.xml:57:9-61:18
 73            <action android:name="android.intent.action.VIEW" />
-73-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
-73-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+73-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+73-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 74
 75            <data android:scheme="sms" />
-75-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
-75-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+75-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+75-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 76        </intent>
 77        <intent>
 77-->[com.google.android.gms:play-services-ads-api:24.1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\e27aa4526ed626298054bf4b09883478\transformed\jetified-play-services-ads-api-24.1.0\AndroidManifest.xml:62:9-66:18
 78            <action android:name="android.intent.action.DIAL" />
-78-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:23:13-65
-78-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:23:21-62
+78-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:23:13-65
+78-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:23:21-62
 79
 80            <data android:path="tel:" />
-80-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+80-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 81        </intent>
 82        <intent>
 82-->[com.razorpay:standard-core:1.6.53] C:\Users\Alphawizz\.gradle\caches\transforms-3\21ff81ccd2aa16af6d7f98d9f8daf14c\transformed\jetified-standard-core-1.6.53\AndroidManifest.xml:11:9-17:18
 83            <action android:name="android.intent.action.VIEW" />
-83-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
-83-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+83-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+83-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 84
 85            <data
-85-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+85-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 86                android:mimeType="*/*"
 87                android:scheme="*" />
-87-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+87-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 88        </intent>
 89        <intent>
 89-->[com.razorpay:standard-core:1.6.53] C:\Users\Alphawizz\.gradle\caches\transforms-3\21ff81ccd2aa16af6d7f98d9f8daf14c\transformed\jetified-standard-core-1.6.53\AndroidManifest.xml:18:9-27:18
 90            <action android:name="android.intent.action.VIEW" />
-90-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
-90-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+90-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+90-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 91
 92            <category android:name="android.intent.category.BROWSABLE" />
 92-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:33:17-78
 92-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:33:27-75
 93
 94            <data
-94-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+94-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 95                android:host="pay"
 96                android:mimeType="*/*"
 97                android:scheme="upi" />
-97-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+97-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 98        </intent>
 99        <intent>
 99-->[com.razorpay:standard-core:1.6.53] C:\Users\Alphawizz\.gradle\caches\transforms-3\21ff81ccd2aa16af6d7f98d9f8daf14c\transformed\jetified-standard-core-1.6.53\AndroidManifest.xml:28:9-30:18
 100            <action android:name="android.intent.action.MAIN" />
-100-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
-100-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
+100-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
+100-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
 101        </intent>
 102        <intent>
 102-->[com.razorpay:standard-core:1.6.53] C:\Users\Alphawizz\.gradle\caches\transforms-3\21ff81ccd2aa16af6d7f98d9f8daf14c\transformed\jetified-standard-core-1.6.53\AndroidManifest.xml:36:9-38:18
@@ -188,17 +188,17 @@
 106    </queries>
 107
 108    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
-108-->[:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
-108-->[:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
+108-->[:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+108-->[:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
 109    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-109-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
-109-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+109-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+109-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
 110    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-110-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
-110-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+110-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+110-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
 111    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-111-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-79
-111-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-76
+111-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-79
+111-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-76
 112    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" /> <!-- Required by older versions of Google Play services to create IID tokens -->
 112-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
 112-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
@@ -244,15 +244,15 @@
 130-->[androidx.core:core:1.13.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\428f1332695b01c88fd4984f8a9ca6a3\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 131
 132    <application
-132-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:37:5-110:19
+132-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:37:5-110:19
 133        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 133-->[androidx.core:core:1.13.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\428f1332695b01c88fd4984f8a9ca6a3\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 134        android:debuggable="true"
 135        android:extractNativeLibs="false"
 136        android:icon="@mipmap/ic_launcher"
-136-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:40:9-43
+136-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:40:9-43
 137        android:label="Fasto Driver"
-137-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:38:9-37
+137-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:38:9-37
 138        android:supportsRtl="true" >
 138-->[com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:14:18-44
 139        <provider
@@ -261,43 +261,43 @@
 142            android:exported="false"
 143            android:grantUriPermissions="true" >
 144            <meta-data
-144-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+144-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
 145                android:name="android.support.FILE_PROVIDER_PATHS"
-145-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+145-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 146                android:resource="@xml/provider_paths" />
-146-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+146-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
 147        </provider>
 148
 149        <activity
-149-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:51:9-55:43
+149-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:51:9-55:43
 150            android:name="com.yalantis.ucrop.UCropActivity"
-150-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:52:13-60
+150-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:52:13-60
 151            android:screenOrientation="portrait"
-151-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:53:13-49
+151-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:53:13-49
 152            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-152-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:54:13-69
+152-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:54:13-69
 153        <activity
-153-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:56:9-84:20
+153-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:56:9-84:20
 154            android:name="com.fasto.driver.MainActivity"
-154-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:57:13-41
+154-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:57:13-41
 155            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-155-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:64:13-163
+155-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:64:13-163
 156            android:exported="true"
-156-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:58:13-36
+156-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:58:13-36
 157            android:hardwareAccelerated="true"
-157-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:65:13-47
+157-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:65:13-47
 158            android:launchMode="singleTop"
-158-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:59:13-43
+158-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:59:13-43
 159            android:requestLegacyExternalStorage="true"
-159-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:63:13-56
+159-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:63:13-56
 160            android:showWhenLocked="true"
-160-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:60:13-42
+160-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:60:13-42
 161            android:theme="@style/LaunchTheme"
-161-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:62:13-47
+161-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:62:13-47
 162            android:turnScreenOn="true"
-162-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:61:13-40
+162-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:61:13-40
 163            android:windowSoftInputMode="adjustResize" >
-163-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:66:13-55
+163-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:66:13-55
 164
 165            <!--
 166                 Specifies an Android theme to apply to this Activity as soon as
@@ -306,25 +306,25 @@
 169                 to determine the Window background behind the Flutter UI.
 170            -->
 171            <meta-data
-171-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:71:13-74:17
+171-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:71:13-74:17
 172                android:name="io.flutter.embedding.android.NormalTheme"
-172-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:72:15-70
+172-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:72:15-70
 173                android:resource="@style/NormalTheme" />
-173-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:73:15-52
+173-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:73:15-52
 174
 175            <!-- <meta-data -->
 176            <!-- android:name="io.flutter.embedding.android.SplashScreenDrawable" -->
 177            <!-- android:resource="@drawable/launch_background" -->
 178            <!-- /> -->
 179            <intent-filter>
-179-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:80:13-83:29
+179-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:80:13-83:29
 180                <action android:name="android.intent.action.MAIN" />
-180-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
-180-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
+180-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
+180-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
 181
 182                <category android:name="android.intent.category.LAUNCHER" />
-182-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:82:17-76
-182-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:82:27-74
+182-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:82:17-76
+182-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:82:27-74
 183            </intent-filter>
 184        </activity>
 185
@@ -333,77 +333,77 @@
 188             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 189        -->
 190        <meta-data
-190-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:88:9-90:33
+190-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:88:9-90:33
 191            android:name="flutterEmbedding"
-191-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:89:13-44
+191-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:89:13-44
 192            android:value="2" />
-192-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:90:13-30
+192-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:90:13-30
 193        <!--
 194            <meta-data
 195            android:name="com.google.firebase.messaging.default_notification_channel_id"
 196            android:value="high_importance_channel" />
 197        -->
 198        <meta-data
-198-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:94:9-96:71
+198-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:94:9-96:71
 199            android:name="com.google.android.geo.API_KEY"
-199-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:95:13-58
+199-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:95:13-58
 200            android:value="AIzaSyD65ula_94BY_XziYpJOLXFN-DOVwnBdcI" />
-200-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:96:13-68
+200-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:96:13-68
 201        <meta-data
-201-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:97:9-99:69
+201-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:97:9-99:69
 202            android:name="com.google.android.gms.ads.APPLICATION_ID"
-202-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:98:13-69
+202-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:98:13-69
 203            android:value="ca-app-pub-3940256099942544~6300978111" />
-203-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:99:13-67
+203-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:99:13-67
 204
 205        <service
-205-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:100:9-103:43
+205-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:100:9-103:43
 206            android:name="com.dexterous.flutterlocalnotifications.ForegroundService"
-206-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:101:13-85
+206-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:101:13-85
 207            android:exported="false"
-207-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:102:13-37
+207-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:102:13-37
 208            android:stopWithTask="false" />
-208-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:103:13-41
+208-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:103:13-41
 209
 210        <meta-data
-210-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:104:9-106:59
+210-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:104:9-106:59
 211            android:name="com.google.firebase.messaging.default_notification_channel_id"
-211-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:105:13-89
+211-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:105:13-89
 212            android:value="default_notification_channel" />
-212-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:106:13-57
+212-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:106:13-57
 213        <meta-data
-213-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:107:9-109:56
+213-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:107:9-109:56
 214            android:name="com.google.firebase.messaging.default_notification_icon"
-214-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:108:13-83
+214-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:108:13-83
 215            android:resource="@drawable/ic_launcher" />
-215-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:109:13-53
+215-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:109:13-53
 216
 217        <service
-217-->[:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+217-->[:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
 218            android:name="com.google.firebase.components.ComponentDiscoveryService"
-218-->[:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+218-->[:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 219            android:directBootAware="true"
 219-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\d904b6c3d445e443b7dee609e7975645\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
 220            android:exported="false" >
 220-->[com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\c1fdbd10a7b27a6bf33cfe253cf98203\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:23:13-37
 221            <meta-data
-221-->[:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+221-->[:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 222                android:name="com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar"
-222-->[:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-131
+222-->[:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-131
 223                android:value="com.google.firebase.components.ComponentRegistrar" />
-223-->[:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+223-->[:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 224            <meta-data
-224-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+224-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
 225                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
-225-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+225-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
 226                android:value="com.google.firebase.components.ComponentRegistrar" />
-226-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+226-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
 227            <meta-data
-227-->[:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+227-->[:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 228                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
-228-->[:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+228-->[:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 229                android:value="com.google.firebase.components.ComponentRegistrar" />
-229-->[:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+229-->[:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 230            <meta-data
 230-->[com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\c1fdbd10a7b27a6bf33cfe253cf98203\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:24:13-26:85
 231                android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar"
@@ -472,146 +472,146 @@
 262-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Alphawizz\.gradle\caches\transforms-3\daa5c46f95d031de03aabf5e1f58a8a5\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
 263        </service>
 264        <service
-264-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+264-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
 265            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
-265-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+265-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
 266            android:exported="false"
-266-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+266-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 267            android:permission="android.permission.BIND_JOB_SERVICE" />
-267-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+267-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
 268        <service
-268-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+268-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
 269            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
-269-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+269-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
 270            android:exported="false" >
-270-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+270-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
 271            <intent-filter>
-271-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+271-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 272                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-272-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-272-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+272-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+272-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 273            </intent-filter>
 274        </service>
 275
 276        <receiver
-276-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+276-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
 277            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
-277-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+277-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
 278            android:exported="true"
-278-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+278-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
 279            android:permission="com.google.android.c2dm.permission.SEND" >
-279-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+279-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
 280            <intent-filter>
-280-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+280-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 281                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-281-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-281-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+281-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+281-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 282            </intent-filter>
 283        </receiver>
 284
 285        <provider
-285-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+285-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
 286            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
-286-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+286-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
 287            android:authorities="com.fasto.driver.flutterfirebasemessaginginitprovider"
-287-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+287-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
 288            android:exported="false"
-288-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+288-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 289            android:initOrder="99" />
-289-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+289-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
 290        <provider
-290-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+290-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 291            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-291-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+291-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
 292            android:authorities="com.fasto.driver.flutter.image_provider"
-292-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+292-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
 293            android:exported="false"
-293-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+293-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 294            android:grantUriPermissions="true" >
-294-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+294-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 295            <meta-data
-295-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+295-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
 296                android:name="android.support.FILE_PROVIDER_PATHS"
-296-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+296-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 297                android:resource="@xml/flutter_image_picker_file_paths" />
-297-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+297-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
 298        </provider>
 299
 300        <service
-300-->[:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:56
+300-->[:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:56
 301            android:name="com.baseflow.geolocator.GeolocatorLocationService"
-301-->[:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-77
+301-->[:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-77
 302            android:enabled="true"
-302-->[:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-35
+302-->[:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-35
 303            android:exported="false"
-303-->[:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+303-->[:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 304            android:foregroundServiceType="location" />
-304-->[:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-53
+304-->[:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-53
 305
 306        <meta-data
-306-->[:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:36
+306-->[:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:36
 307            android:name="io.flutter.embedded_views_preview"
-307-->[:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-61
+307-->[:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-61
 308            android:value="true" />
-308-->[:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-33
+308-->[:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-33
 309
 310        <service
-310-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-15:56
+310-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-15:56
 311            android:name="com.lyokone.location.FlutterLocationService"
-311-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-71
+311-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-71
 312            android:enabled="true"
-312-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-35
+312-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-35
 313            android:exported="false"
-313-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+313-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
 314            android:foregroundServiceType="location" />
-314-->[:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-53
+314-->[:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-53
 315        <!--
 316           Declares a provider which allows us to store files to share in
 317           '.../caches/share_plus' and grant the receiving action access
 318        -->
 319        <provider
-319-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:20
+319-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:20
 320            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
-320-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-77
+320-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-77
 321            android:authorities="com.fasto.driver.flutter.share_provider"
-321-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-74
+321-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-74
 322            android:exported="false"
-322-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+322-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 323            android:grantUriPermissions="true" >
-323-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-47
+323-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-47
 324            <meta-data
-324-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+324-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
 325                android:name="android.support.FILE_PROVIDER_PATHS"
-325-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+325-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 326                android:resource="@xml/flutter_share_file_paths" />
-326-->[:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+326-->[:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
 327        </provider>
 328        <!--
 329           This manifest declared broadcast receiver allows us to use an explicit
 330           Intent when creating a PendingItent to be informed of the user's choice
 331        -->
 332        <receiver
-332-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-32:20
+332-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-32:20
 333            android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent"
-333-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-82
+333-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-82
 334            android:exported="false" >
-334-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37
+334-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37
 335            <intent-filter>
-335-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-31:29
+335-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-31:29
 336                <action android:name="EXTRA_CHOSEN_COMPONENT" />
-336-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-65
-336-->[:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:25-62
+336-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-65
+336-->[:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:25-62
 337            </intent-filter>
 338        </receiver>
 339
 340        <activity
-340-->[:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+340-->[:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 341            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-341-->[:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+341-->[:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 342            android:exported="false"
-342-->[:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+342-->[:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 343            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-343-->[:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+343-->[:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 344
 345        <receiver
 345-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:29:9-40:20
@@ -622,10 +622,10 @@
 348            android:permission="com.google.android.c2dm.permission.SEND" >
 348-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:32:13-73
 349            <intent-filter>
-349-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+349-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 350                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-350-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
-350-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+350-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+350-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 351            </intent-filter>
 352
 353            <meta-data
@@ -648,10 +648,10 @@
 364            android:exported="false" >
 364-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
 365            <intent-filter android:priority="-500" >
-365-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+365-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 366                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-366-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
-366-->[:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+366-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+366-->[:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 367            </intent-filter>
 368        </service>
 369
@@ -695,8 +695,8 @@
 389            <intent-filter>
 389-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:29:13-38:29
 390                <action android:name="android.intent.action.VIEW" />
-390-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
-390-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+390-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+390-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 391
 392                <category android:name="android.intent.category.DEFAULT" />
 392-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:32:17-76
@@ -706,10 +706,10 @@
 393-->[com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:33:27-75
 394
 395                <data
-395-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+395-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 396                    android:host="cct.com.fasto.driver"
 397                    android:scheme="fbconnect" />
-397-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+397-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 398            </intent-filter>
 399        </activity>
 400        <!--
@@ -1069,8 +1069,8 @@
 589            <intent-filter>
 589-->[com.razorpay:standard-core:1.6.53] C:\Users\Alphawizz\.gradle\caches\transforms-3\21ff81ccd2aa16af6d7f98d9f8daf14c\transformed\jetified-standard-core-1.6.53\AndroidManifest.xml:47:13-49:29
 590                <action android:name="android.intent.action.MAIN" />
-590-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
-590-->D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
+590-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
+590-->C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
 591            </intent-filter>
 592        </activity>
 593        <activity

@@ -6,6 +6,7 @@ import 'package:html/parser.dart';
 
 import '../../utils/ApiBaseHelper.dart';
 import '../../utils/Session.dart';
+import '../../utils/colors.dart';
 import '../../utils/constant.dart';
 import '../../utils/new_utils/ui.dart';
 
@@ -23,6 +24,7 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
     super.initState();
     getData();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,8 +38,17 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
             color: Colors.black,
           ),
         ),
-        backgroundColor: Colors.white,
-        title: Text('Terms & Conditions',style: TextStyle(color: Colors.black),),
+        elevation: 4,
+        shadowColor: Colors.black.withOpacity(0.2),
+        backgroundColor: MyColorName.colorBg1,
+        title: Text(
+          'Terms & Conditions',
+          style: TextStyle(
+            fontSize: 20,
+            fontFamily: AppTheme.fontFamily,
+            color: MyColorName.secondary,
+          ),
+        ),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -46,18 +57,28 @@ class _TermsAndConditionsState extends State<TermsAndConditions> {
           child: status
               ? Center(child: CircularProgressIndicator())
               : Column(
-            children: [Text(data.body.text)],
-          ),
+                  children: [
+                    Text(
+                      data.body.text,
+                      style: TextStyle(
+                        fontFamily: AppTheme.fontFamily,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 18,
+                      ),
+                      textAlign: TextAlign.justify,
+                    )
+                  ],
+                ),
         ),
       ),
     );
   }
 
-
   ApiBaseHelper apiBase = new ApiBaseHelper();
   bool isNetwork = false;
   bool status = false;
   var data;
+
   getData() async {
     status = true;
     setState(() {});

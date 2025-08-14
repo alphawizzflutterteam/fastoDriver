@@ -64,164 +64,179 @@ class _VerificationUIState extends State<VerificationUI> {
         ),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+        child: Stack(
           children: [
-            Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset(
-                    "assets/otp_verify.png",
-                    scale: 4,
-                  ),
-                  // SizedBox(width: 12),
-                  // Text(
-                  //   "Pristine\nAndaman",
-                  //   style: TextStyle(
-                  //       fontSize: 28, color: AppTheme.primaryColor),
-                  // ),
-                ],
-              ),
-            ),
-
-            SizedBox(
-              height: 40,
-            ),
-            Text(
-              'Enter OTP',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
-            ),
-            SizedBox(height: 10),
-            Text(
-              '4 digit OTP has been sent to',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
-            ),
-            SizedBox(height: 10),
-            Text(
-              '${widget.mobile} OTP: ${widget.otp}',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
-            // SizedBox(height: 10),
-            // Text(
-            //   '${widget.otp}',
-            //   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            // ),
-            SizedBox(
-              height: 20,
-            ),
-            // EntryField(
-            //   keyboardType: TextInputType.phone,
-            //   maxLength: 4,
-            //   controller: _otpController,
-            // ),
-
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30.0),
-              child: PinCodeTextField(
-                appContext: context,
-                length: 4,
-                keyboardType: TextInputType.number,
-                controller: _otpController,
-                validator: (value) {
-                  if (value!.length < 4) {
-                    return "OTP length must be 4";
-                  } else {
-                    return null;
-                  }
-                },
-                pinTheme: PinTheme(
-                  shape: PinCodeFieldShape.box,
-                  borderRadius: BorderRadius.circular(5),
-                  fieldHeight: 50,
-                  fieldWidth: 40,
-                  activeFillColor: Colors.black,
-                  inactiveFillColor: Colors.black,
-                  selectedFillColor: Colors.black,
-                  activeColor: Colors.black,
-                  inactiveColor: Colors.black,
-                  selectedColor: Colors.black,
+            Container(
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height) / 1.0,//past 1.5
+              decoration: BoxDecoration(
+                image: const DecorationImage(
+                  image: AssetImage('assets/background.png'),
+                  fit: BoxFit.cover, // responsive full screen
                 ),
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
-
-            !loading
-                ? Column(
+            Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 30, right: 30),
-                        child: GestureDetector(
-                            onTap: () {
-                              if (_otpController.text.isEmpty ||
-                                  _otpController.text.length != 4) {
-                                UI.setSnackBar(
-                                    "Please Enter Valid Otp", context);
-                                return;
-                              }
-                              if (widget.comeFrom == "signIn") {
-                                if (_otpController.text == widget.otp) {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => RegistrationUI(
-                                        widget.mobile.toString(),
-                                      ),
-                                    ),
-                                  );
-                                } else {
-                                  Fluttertoast.showToast(
-                                    msg: "Wrong Otp",
-                                    toastLength: Toast.LENGTH_SHORT,
-                                    gravity: ToastGravity.BOTTOM,
-                                    backgroundColor: Colors.black,
-                                    textColor: Colors.white,
-                                  );
-                                }
-                                return;
-                              }
-                              if (widget.comeFrom == "login") {
-                                if (_otpController.text != widget.otp) {
-                                  UI.setSnackBar("Wrong Otp", context);
-                                  return;
-                                }
-                                setState(() {
-                                  loading = true;
-                                });
-                                loginUser();
-                              }
-                            },
-                            child: ButtonCustom(
-                              title: 'VERIFY OTP',
-                            )),
+                      Image.asset(
+                        "assets/otp_verify.png",
+                        scale: 4,
                       ),
-                      SizedBox(height: 15),
-                      GestureDetector(
-                        onTap: () {
-                          resendOtp();
-                        },
-                        child: Center(
-                            child: Text(
-                          'Resend Otp',
-                          style: TextStyle(color: AppTheme.secondaryColor),
-                        )),
-                      ),
-                      SizedBox(
-                        height: 50,
-                      )
+                      // SizedBox(width: 12),
+                      // Text(
+                      //   "Pristine\nAndaman",
+                      //   style: TextStyle(
+                      //       fontSize: 28, color: AppTheme.primaryColor),
+                      // ),
                     ],
-                  )
-                : Center(
-                    child: Container(
-                        width: 50,
-                        child: Center(child: CircularProgressIndicator())),
                   ),
+                ),
 
-            // Text('Don’t have an account? Sign Up',style: theme.textTheme.titleMedium!.copyWith(color: Colors.white),),
-            SizedBox()
+                SizedBox(
+                  height: 40,
+                ),
+                Text(
+                  'Enter OTP',
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.w900),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  '4 digit OTP has been sent to',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  '${widget.mobile} OTP: ${widget.otp}',
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                ),
+                // SizedBox(height: 10),
+                // Text(
+                //   '${widget.otp}',
+                //   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                // ),
+                SizedBox(
+                  height: 20,
+                ),
+                // EntryField(
+                //   keyboardType: TextInputType.phone,
+                //   maxLength: 4,
+                //   controller: _otpController,
+                // ),
+
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 30.0),
+                  child: PinCodeTextField(
+                    appContext: context,
+                    length: 4,
+                    keyboardType: TextInputType.number,
+                    controller: _otpController,
+                    validator: (value) {
+                      if (value!.length < 4) {
+                        return "OTP length must be 4";
+                      } else {
+                        return null;
+                      }
+                    },
+                    pinTheme: PinTheme(
+                      shape: PinCodeFieldShape.box,
+                      borderRadius: BorderRadius.circular(5),
+                      fieldHeight: 50,
+                      fieldWidth: 40,
+                      activeFillColor: Colors.black,
+                      inactiveFillColor: Colors.black,
+                      selectedFillColor: Colors.black,
+                      activeColor: Colors.black,
+                      inactiveColor: Colors.black,
+                      selectedColor: Colors.black,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+
+                !loading
+                    ? Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 30, right: 30),
+                      child: GestureDetector(
+                          onTap: () {
+                            if (_otpController.text.isEmpty ||
+                                _otpController.text.length != 4) {
+                              UI.setSnackBar(
+                                  "Please Enter Valid Otp", context);
+                              return;
+                            }
+                            if (widget.comeFrom == "signIn") {
+                              if (_otpController.text == widget.otp) {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => RegistrationUI(
+                                      widget.mobile.toString(),
+                                    ),
+                                  ),
+                                );
+                              } else {
+                                Fluttertoast.showToast(
+                                  msg: "Wrong Otp",
+                                  toastLength: Toast.LENGTH_SHORT,
+                                  gravity: ToastGravity.BOTTOM,
+                                  backgroundColor: Colors.black,
+                                  textColor: Colors.white,
+                                );
+                              }
+                              return;
+                            }
+                            if (widget.comeFrom == "login") {
+                              if (_otpController.text != widget.otp) {
+                                UI.setSnackBar("Wrong Otp", context);
+                                return;
+                              }
+                              setState(() {
+                                loading = true;
+                              });
+                              loginUser();
+                            }
+                          },
+                          child: ButtonCustom(
+                            title: 'VERIFY OTP',
+                          )),
+                    ),
+                    SizedBox(height: 15),
+                    GestureDetector(
+                      onTap: () {
+                        resendOtp();
+                      },
+                      child: Center(
+                          child: Text(
+                            'Resend Otp',
+                            style: TextStyle(color: AppTheme.secondaryColor),
+                          )),
+                    ),
+                    SizedBox(
+                      height: 50,
+                    )
+                  ],
+                )
+                    : Center(
+                  child: Container(
+                      width: 50,
+                      child: Center(child: CircularProgressIndicator())),
+                ),
+
+                // Text('Don’t have an account? Sign Up',style: theme.textTheme.titleMedium!.copyWith(color: Colors.white),),
+                SizedBox()
+              ],
+            ),
           ],
+
         ),
       ),
     );

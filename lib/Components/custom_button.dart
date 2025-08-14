@@ -27,7 +27,7 @@ class CustomButton extends StatelessWidget {
     return icon != null
         ? TextButton.icon(
             style: TextButton.styleFrom(
-              padding: EdgeInsets.symmetric(horizontal: 24),
+              padding: EdgeInsets.symmetric(horizontal: 16),
               minimumSize: Size(200, 40),
               shape: RoundedRectangleBorder(
                 borderRadius: borderRadius ?? BorderRadius.zero,

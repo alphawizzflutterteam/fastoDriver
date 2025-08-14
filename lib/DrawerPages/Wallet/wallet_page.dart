@@ -14,6 +14,8 @@ import 'package:pristine_andaman_driver/utils/constant.dart';
 import 'package:pristine_andaman_driver/utils/widget.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../utils/colors.dart';
+
 class WalletPage extends StatefulWidget {
   @override
   State<WalletPage> createState() => _WalletPageState();
@@ -199,11 +201,15 @@ class _WalletPageState extends State<WalletPage> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: AppTheme.primaryColor,
+          elevation: 4,
+          shadowColor: Colors.black.withOpacity(0.2),
+          backgroundColor: MyColorName.colorBg1,
           centerTitle: true,
           title: Text(
             "Wallet",
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(fontSize: 20,
+              fontFamily:  AppTheme.fontFamily,
+              color: MyColorName.secondary,),
           ),
           leading: IconButton(
             onPressed: () {
@@ -211,7 +217,7 @@ class _WalletPageState extends State<WalletPage> {
             },
             icon: Icon(
               Icons.arrow_back,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ),
@@ -237,16 +243,18 @@ class _WalletPageState extends State<WalletPage> {
                           Text(
                             getTranslated(context, "AVAILABLE_AMOUNT") ?? "",
                             style: theme.textTheme.bodyMedium?.copyWith(
-                              color: theme.hintColor,
-                              fontSize: 14,
+                              color: MyColorName.secondary,
+                              fontSize: 18,
+                              fontFamily: AppTheme.fontFamily,
                             ),
                           ),
                           const SizedBox(height: 8),
                           Text(
                             '₹${totalBal ?? "0"}',
                             style: theme.textTheme.headlineSmall?.copyWith(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 20,
+                                color: MyColorName.secondary,
+                                fontSize: 24,
+                                fontFamily: AppTheme.fontFamily,
                             ),
                           ),
 
@@ -261,15 +269,13 @@ class _WalletPageState extends State<WalletPage> {
                             hint: getTranslated(context, "EnterAmount") ?? "",
                             label: getTranslated(context, "EnterAmount") ?? "",
                           ),
-                          const SizedBox(height: 16),
 
                           // Add Money Button
                           Padding(
-                            padding: const EdgeInsets.only(
-                                left: 10, right: 10, bottom: 20),
+                            padding: const EdgeInsets.symmetric(horizontal: 16,vertical: 16),
                             child: SizedBox(
-                              width: 250,
-                              height: 40,
+                              width: double.infinity,
+                              height: 50,
                               child: ElevatedButton(
                                 style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(

@@ -13,11 +13,14 @@ import 'package:pristine_andaman_driver/utils/new_utils/ui.dart';
 import 'package:pristine_andaman_driver/utils/widget.dart';
 import 'package:sizer/sizer.dart';
 
+import '../utils/colors.dart';
+
 class NotificationModel {
   String? title;
   String? message;
   String? bookingId;
   String? added_notify_date;
+
   NotificationModel({this.title, this.message, this.bookingId});
 
   NotificationModel.fromJson(Map<String, dynamic> json) {
@@ -114,6 +117,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
   }
 
   bool saveStatus = false;
+
   getDelete() async {
     try {
       setState(() {
@@ -154,11 +158,24 @@ class _NotificationScreenState extends State<NotificationScreen> {
       child: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
-          backgroundColor: AppTheme.primaryColor,
+          leading: InkWell(
+            onTap: () => Navigator.pop(context),
+            child: Icon(
+              Icons.arrow_back_ios,
+              size: 20,
+              color: Colors.black,
+            ),
+          ),
+          elevation: 4,
+          shadowColor: Colors.black.withOpacity(0.2),
+          backgroundColor: MyColorName.colorBg1,
           title: Text(
             getTranslated(context, "Notification")!,
             style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.w600, fontSize: 20),
+              fontSize: 20,
+              fontFamily: AppTheme.fontFamily,
+              color: MyColorName.secondary,
+            ),
           ),
           centerTitle: true,
         ),
@@ -175,9 +192,10 @@ class _NotificationScreenState extends State<NotificationScreen> {
                       Text(
                         getTranslated(context, "Yournotification")!,
                         style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.w400,
-                            fontSize: 20),
+                          fontSize: 18,
+                          fontFamily: AppTheme.fontFamily,
+                          color: MyColorName.secondary,
+                        ),
                       ),
                       notificationList.length > 0
                           ? !saveStatus
@@ -188,9 +206,11 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                   child: Text(
                                     getTranslated(context, "Clearall")!,
                                     style: TextStyle(
-                                        color: Colors.black,
-                                        fontWeight: FontWeight.w400,
-                                        fontSize: 20),
+                                      fontSize: 20,
+                                      fontFamily: AppTheme.fontFamily,
+                                      color: MyColorName.secondary,
+                                      fontWeight: FontWeight.w400,
+                                    ),
                                   ),
                                 )
                               : CircularProgressIndicator()

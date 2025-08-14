@@ -23,6 +23,7 @@ import 'package:pristine_andaman_driver/utils/new_utils/ui.dart';
 import 'package:pristine_andaman_driver/utils/widget.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../utils/colors.dart';
 import '../address.dart';
 import '../app_drawer.dart';
 
@@ -889,16 +890,23 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
       key: _drawerKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
+        iconTheme: IconThemeData(color: MyColorName.secondary,),
         centerTitle: false,
-        backgroundColor: AppTheme.primaryColor,
+        elevation: 4,
+        shadowColor: Colors.black.withOpacity(0.2),
+        backgroundColor: MyColorName.colorBg1,
         title: Text(
           getTranslated(context, "TAKE_RIDE")!,
-          style: TextStyle(color: Colors.white, fontSize: 17),
+          style: TextStyle(fontSize: 18,
+            fontFamily: AppTheme.fontFamily,
+            fontWeight: FontWeight.w600,
+            color: MyColorName.secondary,),
         ),
         actions: [
           UI.commonIconButton(
             message: "Refresh",
             iconData: Icons.refresh,
+            iconColor: MyColorName.secondary,
             onPressed: () async {
               await getLocation();
               await getProfile();
@@ -939,6 +947,7 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
               UI.commonIconButton(
                 message: "Notifications",
                 iconData: Icons.notifications_active,
+                iconColor: MyColorName.secondary,
                 onPressed: () async {
                   var result = await Navigator.push(
                     context,
@@ -1753,6 +1762,7 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
         ),
       ),
       bottomNavigationBar: Container(
+        height: 100,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -1762,7 +1772,7 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
               child: Container(
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.white),
+                    color: MyColorName.colorBg1),
                 padding: EdgeInsets.all(5.0),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,

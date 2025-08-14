@@ -1,40 +1,40 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:41:9-50:20
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:41:9-50:20
 	android:authorities
-		INJECTED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml
 manifest
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:1:1-111:12
-MERGED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:1:1-111:12
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml:1:1-7:12
-MERGED from [:audioplayers_android] D:\FastoDriver\build\audioplayers_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
-MERGED from [:device_info_plus] D:\FastoDriver\build\device_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-48:12
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
-MERGED from [:google_maps_flutter_android] D:\FastoDriver\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
-MERGED from [:flutter_plugin_android_lifecycle] D:\FastoDriver\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:razorpay_flutter] D:\FastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
-MERGED from [:fluttertoast] D:\FastoDriver\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:geocoding_android] D:\FastoDriver\build\geocoding_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:image_cropper] D:\FastoDriver\build\image_cropper\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-18:12
-MERGED from [:wakelock_plus] D:\FastoDriver\build\wakelock_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:package_info_plus] D:\FastoDriver\build\package_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:path_provider_android] D:\FastoDriver\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:permission_handler_android] D:\FastoDriver\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-35:12
-MERGED from [:shared_preferences_android] D:\FastoDriver\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:sqflite] D:\FastoDriver\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
-MERGED from [:webview_flutter_android] D:\FastoDriver\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:1:1-111:12
+MERGED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:1:1-111:12
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+MERGED from [:audioplayers_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\audioplayers_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:device_info_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\device_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-17:12
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-48:12
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:google_maps_flutter_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-19:12
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:razorpay_flutter] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [:fluttertoast] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:geocoding_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geocoding_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-15:12
+MERGED from [:image_cropper] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_cropper\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-18:12
+MERGED from [:wakelock_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\wakelock_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:package_info_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\package_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:path_provider_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:permission_handler_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-35:12
+MERGED from [:shared_preferences_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:sqflite] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:webview_flutter_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:9:1-17:12
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\c1fdbd10a7b27a6bf33cfe253cf98203\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:15:1-33:12
@@ -155,33 +155,33 @@ MERGED from [com.google.maps.android:android-maps-utils:3.6.0] C:\Users\Alphawiz
 MERGED from [com.getkeepsafe.relinker:relinker:1.4.5] C:\Users\Alphawizz\.gradle\caches\transforms-3\bb1e506112649ad2622963150bb19d65\transformed\jetified-relinker-1.4.5\AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\a44064a28f2e9fe06c64cb598c12b55e\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:2:1-13:12
 	package
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:3:5-31
-		INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:2:5-51
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:2:5-51
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:2:5-51
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:2:5-51
 	android:versionCode
-		INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:1:11-69
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:4:5-77
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:4:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\4d15459f0e6798808921bf8458620576\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
 MERGED from [androidx.work:work-runtime:2.7.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\4d15459f0e6798808921bf8458620576\transformed\work-runtime-2.7.1\AndroidManifest.xml:28:5-77
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:4:22-74
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:4:22-74
 uses-permission#android.permission.INTERNET
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:7:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\08cdb5bb6226eb7cb5133bba72f6ee17\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:22:5-67
@@ -207,23 +207,23 @@ MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.6.1] C:
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Alphawizz\.gradle\caches\transforms-3\5dbd9b7b935a26d821644512411af610\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Alphawizz\.gradle\caches\transforms-3\5dbd9b7b935a26d821644512411af610\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:25:5-67
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:5:22-64
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:6:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:8:5-80
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:8:5-80
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:8:22-77
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:8:22-77
 uses-permission#android.permission.CAMERA
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:11:5-64
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:11:5-64
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:11:22-62
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:11:22-62
 uses-permission#android.permission.WAKE_LOCK
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:12:5-68
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:12:5-68
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:24:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\08cdb5bb6226eb7cb5133bba72f6ee17\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:24:5-68
@@ -241,21 +241,21 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:21.6.1] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.6.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\e63d7966a432754d9621324d95d9b501\transformed\jetified-play-services-measurement-sdk-api-21.6.1\AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:21.6.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\e63d7966a432754d9621324d95d9b501\transformed\jetified-play-services-measurement-sdk-api-21.6.1\AndroidManifest.xml:25:5-68
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:12:22-65
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:12:22-65
 uses-permission#android.permission.VIBRATE
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:13:5-66
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:13:5-66
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:13:22-63
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:13:22-63
 uses-feature#android.hardware.camera
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:14:5-85
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:14:5-85
 	android:required
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:14:60-83
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:14:60-83
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:14:20-58
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:14:20-58
 queries
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:15:5-36:15
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:15:5-36:15
 MERGED from [com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:15:5-17:15
 MERGED from [com.facebook.android:facebook-common:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\28773ae96dc6a67685b425730be9205d\transformed\jetified-facebook-common-18.1.3\AndroidManifest.xml:15:5-17:15
 MERGED from [com.google.android.gms:play-services-ads-api:24.1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\e27aa4526ed626298054bf4b09883478\transformed\jetified-play-services-ads-api-24.1.0\AndroidManifest.xml:35:5-68:15
@@ -265,56 +265,56 @@ MERGED from [com.razorpay:standard-core:1.6.53] C:\Users\Alphawizz\.gradle\cache
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\7afeb2891cbac6b9bb69eacef7457ade\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\7afeb2891cbac6b9bb69eacef7457ade\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:30:5-34:15
 intent#action:name:android.intent.action.VIEW+data:scheme:https
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:17:9-20:18
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:17:9-20:18
 action#android.intent.action.VIEW
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:13-65
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:18:21-62
 data
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:13-44
 	android:scheme
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:19:19-41
 intent#action:name:android.intent.action.DIAL+data:scheme:tel
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:22:9-25:18
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:22:9-25:18
 action#android.intent.action.DIAL
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:23:13-65
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:23:13-65
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:23:21-62
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:23:21-62
 intent#action:name:android.intent.action.SENDTO+data:scheme:smsto
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:27:9-30:18
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:27:9-30:18
 action#android.intent.action.SENDTO
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:28:13-67
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:28:13-67
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:28:21-64
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:28:21-64
 intent#action:name:android.intent.action.SEND+data:mimeType:*/*
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:32:9-35:18
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:32:9-35:18
 action#android.intent.action.SEND
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:33:13-65
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:33:13-65
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:33:21-62
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:33:21-62
 application
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:37:5-110:19
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-46:19
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-46:19
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
-MERGED from [:razorpay_flutter] D:\FastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-8:19
-MERGED from [:razorpay_flutter] D:\FastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-8:19
-MERGED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:19
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:19
-MERGED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-16:19
-MERGED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-16:19
-MERGED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-33:19
-MERGED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-33:19
-MERGED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
-MERGED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:37:5-110:19
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-15:19
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-46:19
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-46:19
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-17:19
+MERGED from [:razorpay_flutter] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-8:19
+MERGED from [:razorpay_flutter] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-8:19
+MERGED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:19
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:19
+MERGED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-16:19
+MERGED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-16:19
+MERGED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-33:19
+MERGED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-33:19
+MERGED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-12:19
 MERGED from [com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:14:5-15:19
 MERGED from [com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:14:5-15:19
 MERGED from [com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\c1fdbd10a7b27a6bf33cfe253cf98203\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:20:5-31:19
@@ -416,157 +416,157 @@ MERGED from [com.google.maps.android:android-maps-utils:3.6.0] C:\Users\Alphawiz
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\a44064a28f2e9fe06c64cb598c12b55e\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:11:5-20
 MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\a44064a28f2e9fe06c64cb598c12b55e\transformed\jetified-installreferrer-1.0\AndroidManifest.xml:11:5-20
 	android:extractNativeLibs
-		INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\428f1332695b01c88fd4984f8a9ca6a3\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:supportsRtl
 		ADDED from [com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:14:18-44
 	android:label
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:38:9-37
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:38:9-37
 	android:icon
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:40:9-43
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:40:9-43
 activity#com.yalantis.ucrop.UCropActivity
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:51:9-55:43
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:51:9-55:43
 	android:screenOrientation
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:53:13-49
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:53:13-49
 	tools:ignore
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:55:13-40
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:55:13-40
 	android:theme
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:54:13-69
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:54:13-69
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:52:13-60
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:52:13-60
 activity#com.fasto.driver.MainActivity
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:56:9-84:20
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:56:9-84:20
 	android:requestLegacyExternalStorage
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:63:13-56
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:63:13-56
 	android:turnScreenOn
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:61:13-40
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:61:13-40
 	android:showWhenLocked
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:60:13-42
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:60:13-42
 	android:launchMode
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:59:13-43
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:59:13-43
 	android:hardwareAccelerated
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:65:13-47
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:65:13-47
 	android:windowSoftInputMode
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:66:13-55
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:66:13-55
 	android:exported
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:58:13-36
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:58:13-36
 	android:configChanges
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:64:13-163
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:64:13-163
 	android:theme
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:62:13-47
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:62:13-47
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:57:13-41
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:57:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:71:13-74:17
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:71:13-74:17
 	android:resource
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:73:15-52
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:73:15-52
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:72:15-70
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:72:15-70
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:80:13-83:29
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:80:13-83:29
 action#android.intent.action.MAIN
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:17-68
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:81:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:82:17-76
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:82:17-76
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:82:27-74
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:82:27-74
 meta-data#flutterEmbedding
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:88:9-90:33
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:88:9-90:33
 	android:value
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:90:13-30
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:90:13-30
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:89:13-44
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:89:13-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:94:9-96:71
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:94:9-96:71
 	android:value
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:96:13-68
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:96:13-68
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:95:13-58
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:95:13-58
 meta-data#com.google.android.gms.ads.APPLICATION_ID
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:97:9-99:69
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:97:9-99:69
 	android:value
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:99:13-67
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:99:13-67
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:98:13-69
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:98:13-69
 service#com.dexterous.flutterlocalnotifications.ForegroundService
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:100:9-103:43
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:100:9-103:43
 	android:exported
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:102:13-37
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:102:13-37
 	android:stopWithTask
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:103:13-41
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:103:13-41
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:101:13-85
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:101:13-85
 meta-data#com.google.firebase.messaging.default_notification_channel_id
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:104:9-106:59
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:104:9-106:59
 	android:value
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:106:13-57
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:106:13-57
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:105:13-89
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:105:13-89
 meta-data#com.google.firebase.messaging.default_notification_icon
-ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:107:9-109:56
+ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:107:9-109:56
 	android:resource
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:109:13-53
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:109:13-53
 	android:name
-		ADDED from D:\FastoDriver\android\app\src\main\AndroidManifest.xml:108:13-83
+		ADDED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\main\AndroidManifest.xml:108:13-83
 uses-sdk
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
-INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
-MERGED from [:audioplayers_android] D:\FastoDriver\build\audioplayers_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:audioplayers_android] D:\FastoDriver\build\audioplayers_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:device_info_plus] D:\FastoDriver\build\device_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:device_info_plus] D:\FastoDriver\build\device_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:google_maps_flutter_android] D:\FastoDriver\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:google_maps_flutter_android] D:\FastoDriver\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] D:\FastoDriver\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_plugin_android_lifecycle] D:\FastoDriver\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:razorpay_flutter] D:\FastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:razorpay_flutter] D:\FastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] D:\FastoDriver\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:fluttertoast] D:\FastoDriver\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:geocoding_android] D:\FastoDriver\build\geocoding_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:geocoding_android] D:\FastoDriver\build\geocoding_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_cropper] D:\FastoDriver\build\image_cropper\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:image_cropper] D:\FastoDriver\build\image_cropper\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:wakelock_plus] D:\FastoDriver\build\wakelock_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:wakelock_plus] D:\FastoDriver\build\wakelock_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:package_info_plus] D:\FastoDriver\build\package_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:package_info_plus] D:\FastoDriver\build\package_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] D:\FastoDriver\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:path_provider_android] D:\FastoDriver\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler_android] D:\FastoDriver\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:permission_handler_android] D:\FastoDriver\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] D:\FastoDriver\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:shared_preferences_android] D:\FastoDriver\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] D:\FastoDriver\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:sqflite] D:\FastoDriver\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter_android] D:\FastoDriver\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:webview_flutter_android] D:\FastoDriver\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
+MERGED from [:audioplayers_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\audioplayers_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:audioplayers_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\audioplayers_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:device_info_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\device_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:device_info_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\device_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_maps_flutter_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_maps_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:razorpay_flutter] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:razorpay_flutter] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\razorpay_flutter\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:fluttertoast] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoding_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geocoding_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geocoding_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geocoding_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_cropper\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_cropper\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:wakelock_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\wakelock_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:wakelock_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\wakelock_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:package_info_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\package_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:package_info_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\package_info_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:path_provider_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:permission_handler_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\permission_handler_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\shared_preferences_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:sqflite] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\sqflite\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:webview_flutter_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\webview_flutter_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:12:5-44
 MERGED from [com.facebook.android:facebook-login:18.1.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\c79324344caebff3dfc8afd8c33b462c\transformed\jetified-facebook-login-18.1.3\AndroidManifest.xml:12:5-44
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:5:5-44
@@ -808,13 +808,13 @@ MERGED from [com.android.installreferrer:installreferrer:1.0] C:\Users\Alphawizz
 	tools:overrideLibrary
 		ADDED from [com.google.android.gms:play-services-ads:24.1.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\93148f0bb76178a23202c0a79ef1b39e\transformed\jetified-play-services-ads-24.1.0\AndroidManifest.xml:23:9-49
 	android:targetSdkVersion
-		INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\FastoDriver\android\app\src\debug\AndroidManifest.xml
+		INJECTED from C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\android\app\src\debug\AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+ADDED from [:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:8:5-79
 MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:22:5-79
@@ -844,13 +844,13 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Us
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Alphawizz\.gradle\caches\transforms-3\9ef1b29113df724a65ef1d353e396ede\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Alphawizz\.gradle\caches\transforms-3\9ef1b29113df724a65ef1d353e396ede\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [:connectivity_plus] D:\FastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
+		ADDED from [:connectivity_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\connectivity_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
-MERGED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
+MERGED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:35:9-39:19
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\c1fdbd10a7b27a6bf33cfe253cf98203\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:21:9-30:19
 MERGED from [com.google.firebase:firebase-dynamic-links:21.2.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\c1fdbd10a7b27a6bf33cfe253cf98203\transformed\jetified-firebase-dynamic-links-21.2.0\AndroidManifest.xml:21:9-30:19
 MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:54:9-63:19
@@ -874,157 +874,157 @@ MERGED from [com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Alphawi
 	android:directBootAware
 		ADDED from [com.google.firebase:firebase-common:20.4.3] C:\Users\Alphawizz\.gradle\caches\transforms-3\d904b6c3d445e443b7dee609e7975645\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
 	android:name
-		ADDED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+		ADDED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.dynamiclinks.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+ADDED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
 	android:value
-		ADDED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+		ADDED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
 	android:name
-		ADDED from [:firebase_dynamic_links] D:\FastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-131
+		ADDED from [:firebase_dynamic_links] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_dynamic_links\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-131
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
-MERGED from [:flutter_local_notifications] D:\FastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-77
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
+MERGED from [:flutter_local_notifications] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-77
 MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:23:5-77
 MERGED from [com.google.firebase:firebase-messaging:23.4.1] C:\Users\Alphawizz\.gradle\caches\transforms-3\7dd601cd1470e5a2c293179c63788690\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:23:5-77
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-74
 service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-17:72
 	android:exported
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 	android:permission
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-69
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-107
 service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:9-24:19
 	android:exported
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-97
 intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-23:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:17-78
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:25-75
 receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-33:20
 	android:exported
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-36
 	android:permission
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-73
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-98
 intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:29
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-81
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:25-78
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-38:85
 	android:value
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:17-82
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:17-128
 provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
-ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
+ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:41:9-45:38
 	android:authorities
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-88
 	android:exported
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-37
 	android:initOrder
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-35
 	android:name
-		ADDED from [:firebase_messaging] D:\FastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
+		ADDED from [:firebase_messaging] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-102
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
-ADDED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] D:\FastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
+		ADDED from [:firebase_core] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:10:17-124
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
+ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
-		ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
+		ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-47
 	android:authorities
-		ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
+		ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-74
 	android:exported
-		ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
+		ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
+ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-15:75
 	android:resource
-		ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
+		ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:17-72
 	android:name
-		ADDED from [:image_picker_android] D:\FastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
+		ADDED from [:image_picker_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:17-67
 service#com.baseflow.geolocator.GeolocatorLocationService
-ADDED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:56
+ADDED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-12:56
 	android:enabled
-		ADDED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-35
+		ADDED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-35
 	android:exported
-		ADDED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
+		ADDED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-37
 	android:foregroundServiceType
-		ADDED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-53
+		ADDED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-53
 	android:name
-		ADDED from [:geolocator_android] D:\FastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-77
+		ADDED from [:geolocator_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\geolocator_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-77
 meta-data#io.flutter.embedded_views_preview
-ADDED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:36
+ADDED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:36
 	android:value
-		ADDED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-33
+		ADDED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-33
 	android:name
-		ADDED from [:google_mobile_ads] D:\FastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-61
+		ADDED from [:google_mobile_ads] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\google_mobile_ads\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-61
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
+ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
+		ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-79
+ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-79
 	android:name
-		ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-76
+		ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:8:22-76
 service#com.lyokone.location.FlutterLocationService
-ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-15:56
+ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-15:56
 	android:enabled
-		ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-35
+		ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-35
 	android:exported
-		ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+		ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
 	android:foregroundServiceType
-		ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-53
+		ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-53
 	android:name
-		ADDED from [:location] D:\FastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-71
+		ADDED from [:location] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\location\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-71
 provider#dev.fluttercommunity.plus.share.ShareFileProvider
-ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:20
+ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:13:9-21:20
 	android:grantUriPermissions
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-47
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-47
 	android:authorities
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-74
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-74
 	android:exported
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-77
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-77
 receiver#dev.fluttercommunity.plus.share.SharePlusPendingIntent
-ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-32:20
+ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:26:9-32:20
 	android:exported
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-82
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-82
 intent-filter#action:name:EXTRA_CHOSEN_COMPONENT
-ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-31:29
+ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-31:29
 action#EXTRA_CHOSEN_COMPONENT
-ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-65
+ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:17-65
 	android:name
-		ADDED from [:share_plus] D:\FastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:25-62
+		ADDED from [:share_plus] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\share_plus\intermediates\merged_manifest\debug\AndroidManifest.xml:30:25-62
 activity#io.flutter.plugins.urllauncher.WebViewActivity
-ADDED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
+ADDED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:8:9-11:74
 	android:exported
-		ADDED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
+		ADDED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:13-37
 	android:theme
-		ADDED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
+		ADDED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-71
 	android:name
-		ADDED from [:url_launcher_android] D:\FastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
+		ADDED from [:url_launcher_android] C:\Users\Alphawizz\AndroidStudioProjects\fastoDriver\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:9:13-74
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
 ADDED from [com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Alphawizz\.gradle\caches\transforms-3\3d277efa1ccaa7f0d1f1e1f1e50dd5d4\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
 	android:name

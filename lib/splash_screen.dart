@@ -18,12 +18,26 @@ class SplashScreen extends StatelessWidget {
       onEnd: () {
         debugPrint("On End");
       },
-      splashScreenBody: Center(
-        child: SizedBox(
-          height: 250,
-          width: 250,
-          child: Image.asset("assets/splashlogo.png"),
-        ),
+      splashScreenBody: Stack(
+        children: [
+          Container(
+            width: MediaQuery.of(context).size.width,
+            height: (MediaQuery.of(context).size.height) / 1.0,//past 1.5
+            decoration: BoxDecoration(
+              image: const DecorationImage(
+                image: AssetImage('assets/background.png'),
+                fit: BoxFit.cover, // responsive full screen
+              ),
+            ),
+          ),
+          Center(
+            child: SizedBox(
+              height: 250,
+              width: 250,
+              child: Image.asset("assets/splashlogo.png"),
+            ),
+          ),
+        ],
       ),
       nextScreen: LoginPage(),
     );
