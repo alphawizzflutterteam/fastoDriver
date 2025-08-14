@@ -6,6 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:pristine_andaman_driver/Api/constant.dart';
 import 'package:pristine_andaman_driver/Components/button_custom.dart';
 import 'package:pristine_andaman_driver/Provider/UserProvider.dart';
+import 'package:pristine_andaman_driver/Theme/style.dart';
 import 'package:pristine_andaman_driver/utils/ApiBaseHelper.dart';
 import 'package:pristine_andaman_driver/utils/Session.dart';
 import 'package:pristine_andaman_driver/utils/colors.dart';
@@ -111,122 +112,165 @@ class _LoginUIState extends State<LoginUI> {
     var theme = Theme.of(context);
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
+        child: Stack(
           children: [
-            SizedBox(
-              height: 100,
-            ),
-            Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset("assets/login_image.png", scale: 2),
-                  // SizedBox(width: 12),
-                  // Text("Pristine\nAndaman", style: TextStyle(fontSize: 28, color: AppTheme.primaryColor),),
-                ],
-              ),
-            ),
-            SizedBox(height: 40),
             Container(
-              width: (MediaQuery.of(context).size.width) - 40,
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height) / 1.0, //past 1.5
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(17),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Center(
-                      child: Text(
-                        'Login To Your Account',
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.w900),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20.0),
-                      child: Text('We will send you a confirmation code'),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    TextFormField(
-                      keyboardType: TextInputType.phone,
-                      controller: _numberController,
-                      maxLength: 10,
-                      decoration: InputDecoration(
-                        fillColor: MyColorName.colorBg1,
-                        counterText: "",
-                        hintText: "Enter Number",
-                        hintStyle: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    !loading
-                        ? Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10.0),
-                            child: GestureDetector(
-                              onTap: () {
-                                if (_numberController.text == "" ||
-                                    _numberController.text.length != 10) {
-                                  UI.setSnackBar(
-                                      "Please Enter Valid Mobile Number",
-                                      context);
-                                  return;
-                                }
-                                setState(() {
-                                  loading = true;
-                                });
-                                loginUser();
-                              },
-                              child: ButtonCustom(
-                                title: 'SEND OTP',
-                              ),
-                            ),
-                          )
-                        : Center(
-                            child: Container(
-                              width: 50,
-                              child: Center(
-                                child: CircularProgressIndicator(),
-                              ),
-                            ),
-                          ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                  ],
+                image: const DecorationImage(
+                  image: AssetImage('assets/background.png'),
+                  fit: BoxFit.cover,
                 ),
               ),
             ),
-            InkWell(
-              onTap: () {
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(
-                //     builder: (context) => RegistrationUI(''),
-                //   ),
-                // );
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => SignIn(),
+            Column(
+              children: [
+                SizedBox(
+                  height: 100,
+                ),
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("assets/login_image.png", scale: 2),
+                      // SizedBox(width: 12),
+                      // Text("Pristine\nAndaman", style: TextStyle(fontSize: 28, color: AppTheme.primaryColor),),
+                    ],
                   ),
-                );
-              },
-              child: Text(
-                'Don’t have an account? Sign Up',
-                style:
-                    theme.textTheme.titleMedium!.copyWith(color: Colors.black),
-              ),
+                ),
+                SizedBox(height: 40),
+                Container(
+                  width: (MediaQuery.of(context).size.width) - 40,
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(17),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Center(
+                          child: Text(
+                            'Login To Your Account',
+                            style: TextStyle(
+                                fontSize: 24,
+                                fontWeight: FontWeight.w500,
+                                fontFamily: AppTheme.fontFamily),
+                          ),
+                        ),
+                        // Padding(
+                        //   padding: const EdgeInsets.symmetric(vertical: 20.0),
+                        //   child: Text(
+                        //     'We will send you a confirmation code',
+                        //     style: TextStyle(
+                        //       fontSize: 20,
+                        //       fontWeight: FontWeight.w500,
+                        //       fontFamily: AppTheme.fontFamily,
+                        //     ),
+                        //     textAlign: TextAlign.center,
+                        //   ),
+                        // ),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        TextFormField(
+                          keyboardType: TextInputType.phone,
+                          controller: _numberController,
+                          maxLength: 10,
+                          decoration: InputDecoration(
+                            fillColor: MyColorName.colorBg1,
+                            counterText: "",
+                            hintText: "Enter Number",
+                            hintStyle: TextStyle(
+                                color: MyColorName.secondary,
+                                fontWeight: FontWeight.bold,
+                                fontFamily: AppTheme.fontFamily,),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 24),
+                        !loading
+                            ? Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 10.0),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    if (_numberController.text == "" ||
+                                        _numberController.text.length != 10) {
+                                      UI.setSnackBar(
+                                          "Please Enter Valid Mobile Number",
+                                          context);
+                                      return;
+                                    }
+                                    setState(() {
+                                      loading = true;
+                                    });
+                                    loginUser();
+                                  },
+                                  child: ButtonCustom(
+                                    title: 'SEND OTP',
+                                  ),
+                                ),
+                              )
+                            : Center(
+                                child: Container(
+                                  width: 50,
+                                  child: Center(
+                                    child: CircularProgressIndicator(),
+                                  ),
+                                ),
+                              ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment:
+                  MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Don't have account? ",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontFamily: AppTheme.fontFamily,
+                          fontWeight:
+                          FontWeight.w500),),
+                    InkWell(
+                      onTap: () {
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //     builder: (context) => RegistrationUI(''),
+                        //   ),
+                        // );
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => SignIn(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: MyColorName.primaryLite,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: AppTheme.fontFamily,)
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox()
+              ],
             ),
-            SizedBox()
           ],
         ),
       ),
@@ -312,6 +356,7 @@ class _LoginUIState extends State<LoginUI> {
   ApiBaseHelper apiBase = new ApiBaseHelper();
   bool isNetwork = false;
   bool loading = false;
+
   loginUser() async {
     await App.init();
     isNetwork = await isNetworkAvailable();

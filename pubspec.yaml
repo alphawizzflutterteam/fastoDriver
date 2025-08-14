@@ -114,3 +114,7 @@ flutter:
     - family: SofiaSans
       fonts:
         - asset: assets/fonts/SofiaSans.ttf
+
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf

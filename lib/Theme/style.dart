@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pristine_andaman_driver/utils/colors.dart';
 
 class AppTheme {
-  static String fontFamily = '';
+  static String fontFamily = 'Poppins';
   static Color primaryColor = Color(0xff7DBF04);
   // static Color primaryColor = Color(0xff2942A7);
   static Color secondaryColor = Color(0xff000000);

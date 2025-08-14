@@ -242,10 +242,14 @@ class _MyProfilePageState extends State<MyProfilePage> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.white,
+        elevation: 4,
+        shadowColor: Colors.black.withOpacity(0.2),
+        backgroundColor: MyColorName.colorBg1,
         title: Text(
           'Profile',
-          style: TextStyle(fontSize: 18, color: Colors.black),
+          style: TextStyle(fontSize: 20,
+            fontFamily:  AppTheme.fontFamily,
+            color: MyColorName.secondary,),
         ),
       ),
       body: !saveStatus
@@ -254,30 +258,46 @@ class _MyProfilePageState extends State<MyProfilePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // SizedBox(
-                    //   height: 20,
-                    // ),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Stack(
                       children: [
-                        CircleAvatar(
-                          radius: 70, // Adjust size
-                          backgroundColor: Colors.green.shade50,
-                          backgroundImage: _image != null
-                              ? FileImage(_image!)
-                              : (image != null && image.isNotEmpty
-                                  ? NetworkImage("$image") as ImageProvider
-                                  : null),
-                          child:
-                              _image == null && (image == null || image.isEmpty)
-                                  ? Text(
-                                      "Upload Profile Pic",
-                                      textAlign: TextAlign.center,
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.green,
-                                      ),
-                                    )
-                                  : null,
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(182),
+                            border: Border.all(
+                              color: Colors.black, // border color
+                              width: 3,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.black.withOpacity(0.15),
+                                blurRadius: 6,
+                                offset: Offset(0, 3),
+                              ),
+                            ],
+                          ),
+                          child: CircleAvatar(
+                            radius: 70, // Adjust size
+                            backgroundColor: Colors.green.shade50,
+                            backgroundImage: _image != null
+                                ? FileImage(_image!)
+                                : (image != null && image.isNotEmpty
+                                    ? NetworkImage("$image") as ImageProvider
+                                    : null),
+                            child:
+                                _image == null && (image == null || image.isEmpty)
+                                    ? Text(
+                                        "Upload Profile Pic",
+                                        textAlign: TextAlign.center,
+                                        style: TextStyle(
+                                          fontSize: 14,
+                                          color: Colors.green,
+                                        ),
+                                      )
+                                    : null,
+                          ),
                         ),
                         // Edit Icon
                         Positioned(
@@ -292,6 +312,17 @@ class _MyProfilePageState extends State<MyProfilePage> {
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: Colors.green,
+                                border: Border.all(
+                                  color: Colors.black, // border color
+                                  width: 2,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.black.withOpacity(0.15),
+                                    blurRadius: 6,
+                                    offset: Offset(0, 3),
+                                  ),
+                                ],
                               ),
                               padding: EdgeInsets.all(4),
                               child: Icon(
@@ -561,45 +592,45 @@ class _MyProfilePageState extends State<MyProfilePage> {
                               children: [
                                 buildUploadBox(
                                   label: "Driving License",
-                                  fileImage: drivingImageFile,
-                                  networkImage: drivingImageUrl,
+                                  fileImage: _finalImage,
+                                  networkImage: drivingImage,
                                   onTap: () => pickImage((file) =>
-                                      setState(() => drivingImageFile = file)),
+                                      setState(() => _finalImage = file)),
                                 ),
                                 buildUploadBox(
                                   label: "Passbook",
-                                  fileImage: passportImageFile,
-                                  networkImage: passportImageUrl,
+                                  fileImage: panImage,
+                                  networkImage: panCard,
                                   onTap: () => pickImage((file) =>
-                                      setState(() => passportImageFile = file)),
+                                      setState(() => panImage = file)),
                                 ),
                                 buildUploadBox(
                                   label: "Aadhaar Card(Front)",
-                                  fileImage: aadhaarImageFile,
-                                  networkImage: aadhaarImageUrl,
+                                  fileImage: adharImage,
+                                  networkImage: adharCard,
                                   onTap: () => pickImage((file) =>
-                                      setState(() => aadhaarImageFile = file)),
+                                      setState(() => adharImage = file)),
                                 ),
                                 buildUploadBox(
-                                  label: "Aadhaar Card(Front)",
-                                  fileImage: insuranceImageFile,
-                                  networkImage: insuranceImageUrl,
+                                  label: "Aadhaar Card(Back)",
+                                  fileImage: insuranceImage,
+                                  networkImage: insurance,
                                   onTap: () => pickImage((file) => setState(
-                                      () => insuranceImageFile = file)),
+                                      () => insuranceImage = file)),
                                 ),
                                 buildUploadBox(
                                   label: "Upload RC",
-                                  fileImage: rcImageFile,
-                                  networkImage: rcImageUrl,
+                                  fileImage: bankImage,
+                                  networkImage: cheque,
                                   onTap: () => pickImage((file) => setState(
-                                      () => insuranceImageFile = file)),
+                                      () => bankImage = file)),
                                 ),
                                 buildUploadBox(
                                   label: "Vehicle Image",
-                                  fileImage: vehicleImageFile,
-                                  networkImage: vehicleImageUrl,
+                                  fileImage: vehicleImage,
+                                  networkImage: vehicle,
                                   onTap: () => pickImage((file) =>
-                                      setState(() => vehicleImageFile = file)),
+                                      setState(() => vehicleImage = file)),
                                 ),
                               ],
                             ),
@@ -656,7 +687,7 @@ class _MyProfilePageState extends State<MyProfilePage> {
                   //         ))
                   //     : SizedBox(),
                   SizedBox(
-                    height: 10,
+                    height: 20,
                   ),
                   CustomButton(
                     borderRadius: BorderRadius.circular(10),
@@ -1154,47 +1185,99 @@ class _MyProfilePageState extends State<MyProfilePage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(label),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         InkWell(
           onTap: onTap,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(10),
-            child: fileImage != null
-                ? Image.file(fileImage, height: 200, fit: BoxFit.cover)
-                : (networkImage != null && networkImage.isNotEmpty)
-                    ? Image.network(
-                        networkImage.startsWith('http')
-                            ? networkImage
-                            : "$imagePath$networkImage",
-                        height: 200,
-                        fit: BoxFit.cover,
-                        colorBlendMode:
-                            profileStatus == "0" ? BlendMode.hardLight : null,
-                        color: profileStatus == "0"
-                            ? Colors.white.withOpacity(0.4)
-                            : null,
-                      )
-                    : DottedBorder(
-                        color: Colors.green,
-                        strokeWidth: 2,
-                        dashPattern: [8, 4],
-                        borderType: BorderType.RRect,
-                        radius: Radius.circular(8),
-                        child: Container(
-                          height: 120,
-                          color: Colors.green.shade50,
-                          alignment: Alignment.center,
-                          child: Text(
-                            "Upload $label",
-                            style: TextStyle(fontSize: 18, color: Colors.green),
-                          ),
-                        ),
-                      ),
+            child: SizedBox(
+              height: 175, // Same as dotted border
+              width: double.infinity, // Full width or specify a width
+              child: fileImage != null
+                  ? Image.file(
+                fileImage,
+                fit: BoxFit.cover,
+              )
+                  : (networkImage != null && networkImage.isNotEmpty)
+                  ? Image.network(
+                networkImage.startsWith('http')
+                    ? networkImage
+                    : "$imagePath$networkImage",
+                fit: BoxFit.cover,
+                colorBlendMode:
+                profileStatus == "0" ? BlendMode.hardLight : null,
+                color: profileStatus == "0"
+                    ? Colors.white.withOpacity(0.4)
+                    : null,
+              )
+                  : DottedBorder(
+                color: Colors.green,
+                strokeWidth: 2,
+                dashPattern: [8, 4],
+                borderType: BorderType.RRect,
+                radius: const Radius.circular(8),
+                child: Container(
+                  height: 120,
+                  alignment: Alignment.center,
+                  color: Colors.green.shade50,
+                  child: Text(
+                    "Upload $label",
+                    style: const TextStyle(fontSize: 18, color: Colors.green),
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
-        SizedBox(height: 20),
+        const SizedBox(height: 20),
       ],
     );
+
+    // return Column(
+    //   crossAxisAlignment: CrossAxisAlignment.start,
+    //   children: [
+    //     Text(label),
+    //     SizedBox(height: 10),
+    //     InkWell(
+    //       onTap: onTap,
+    //       child: ClipRRect(
+    //         borderRadius: BorderRadius.circular(10),
+    //         child: fileImage != null
+    //             ? Image.file(fileImage, height: 150, fit: BoxFit.cover)
+    //             : (networkImage != null && networkImage.isNotEmpty)
+    //                 ? Image.network(
+    //                     networkImage.startsWith('http')
+    //                         ? networkImage
+    //                         : "$imagePath$networkImage",
+    //                     height: 150,
+    //                     fit: BoxFit.cover,
+    //                     colorBlendMode:
+    //                         profileStatus == "0" ? BlendMode.hardLight : null,
+    //                     color: profileStatus == "0"
+    //                         ? Colors.white.withOpacity(0.4)
+    //                         : null,
+    //                   )
+    //                 : DottedBorder(
+    //                     color: Colors.green,
+    //                     strokeWidth: 2,
+    //                     dashPattern: [8, 4],
+    //                     borderType: BorderType.RRect,
+    //                     radius: Radius.circular(8),
+    //                     child: Container(
+    //                       height: 120,
+    //                       color: Colors.green.shade50,
+    //                       alignment: Alignment.center,
+    //                       child: Text(
+    //                         "Upload $label",
+    //                         style: TextStyle(fontSize: 18, color: Colors.green),
+    //                       ),
+    //                     ),
+    //                   ),
+    //       ),
+    //     ),
+    //     SizedBox(height: 20),
+    //   ],
+    // );
   }
 
   Future<void> pickImage(Function(File) onImagePicked) async {

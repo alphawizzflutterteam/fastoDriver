@@ -18,7 +18,6 @@ import 'package:pristine_andaman_driver/utils/colors.dart';
 import 'package:pristine_andaman_driver/utils/common.dart';
 import 'package:pristine_andaman_driver/utils/constant.dart';
 import 'package:pristine_andaman_driver/utils/new_utils/ui.dart';
-
 import 'Profile/my_profile.dart';
 import 'Wallet/wallet_page.dart';
 
@@ -132,9 +131,19 @@ class _AppDrawerState extends State<AppDrawer> {
                     );
                   },
                   child: Container(
-                    height: 180,
+                    height: 150,
                     padding: EdgeInsets.only(left: 12, right: 12, top: 9),
-                    color: AppTheme.primaryColor,
+                    decoration: BoxDecoration(
+                        color: MyColorName.colorBg1,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1), // Shadow color
+                          spreadRadius: 0, // No spread
+                          blurRadius: 8, // Softness of shadow
+                          offset: Offset(0, 4), // Shadow only downward
+                        ),
+                      ],
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -144,10 +153,25 @@ class _AppDrawerState extends State<AppDrawer> {
                           child: Row(
                             children: [
                               Container(
-                                height: 72,
-                                width: 72,
+                                height: 75,
+                                width: 75,
+                                decoration: BoxDecoration(
+                                  color: theme.hintColor,
+                                  borderRadius: BorderRadius.circular(182),
+                                  border: Border.all(
+                                    color: Colors.black, // border color
+                                    width: 2,
+                                  ),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black.withOpacity(0.15),
+                                      blurRadius: 6,
+                                      offset: Offset(0, 3),
+                                    ),
+                                  ],
+                                ),
                                 child: ClipRRect(
-                                  borderRadius: BorderRadius.circular(12),
+                                  borderRadius: BorderRadius.circular(180),
                                   child: Image.network(
                                     image,
                                     height: 77,
@@ -171,8 +195,14 @@ class _AppDrawerState extends State<AppDrawer> {
                                     child: Text(name,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 1,
-                                        style: theme.textTheme.headlineSmall!
-                                            .copyWith(color: Colors.white)),
+                                        style: TextStyle(
+                                          fontFamily: AppTheme.fontFamily,
+                                          color: MyColorName.secondary,
+                                          fontWeight: FontWeight.w600,
+                                          fontSize: 18
+                                          ))),
+                                  SizedBox(
+                                    height: 2,
                                   ),
                                   Row(
                                     children: [
@@ -183,37 +213,41 @@ class _AppDrawerState extends State<AppDrawer> {
                                             image: AssetImage(
                                               "assets/Call.png",
                                             ),
-                                            color: Colors.white,
+                                            color: MyColorName.secondary,
                                           )),
                                       SizedBox(width: 2),
                                       Text(mobile,
                                           style: theme.textTheme.bodySmall!
-                                              .copyWith(color: Colors.white)),
+                                              .copyWith(color: MyColorName.secondary)),
                                       SizedBox(width: 10),
-                                      Icon(
-                                        Icons.star_border,
-                                        color: Colors.white,
-                                        size: 20,
-                                      ),
-                                      SizedBox(width: 2),
-                                      Text(rating,
-                                          style: theme.textTheme.bodySmall!
-                                              .copyWith(color: Colors.white)),
+
                                     ],
                                   ),
                                   SizedBox(
-                                    height: 10,
+                                    height: 5,
                                   ),
                                   Row(
                                     children: [
                                       Icon(Icons.edit_outlined,
-                                          color: Colors.white),
+                                          color: MyColorName.secondary),
                                       SizedBox(
                                         width: 2,
                                       ),
                                       Text('Edit',
                                           style: theme.textTheme.titleMedium!
-                                              .copyWith(color: Colors.white))
+                                              .copyWith(color: MyColorName.secondary)),
+                                      SizedBox(
+                                        width: 40,
+                                      ),
+                                      Icon(
+                                        Icons.star_border,
+                                        color: MyColorName.secondary,
+                                        size: 20,
+                                      ),
+                                      SizedBox(width: 2),
+                                      Text(rating,
+                                          style: theme.textTheme.bodySmall!
+                                              .copyWith(color: MyColorName.secondary)),
                                     ],
                                   ),
 
@@ -243,9 +277,9 @@ class _AppDrawerState extends State<AppDrawer> {
                         SizedBox(
                           height: 8,
                         ),*/
-                        SizedBox(
-                          height: 8,
-                        ),
+                        // SizedBox(
+                        //   height: 8,
+                        // ),
                       ],
                     ),
                   ),
@@ -382,6 +416,7 @@ class _AppDrawerState extends State<AppDrawer> {
                     getTranslated(context,Strings.Joining)!, () {
                       Navigator.popAndPushNamed(context, PageRoutes.myProfilePage);
                     }),*/
+                Divider(color: MyColorName.greyBorder,),
                 buildListTile(context, 'assets/myride.png',
                     getTranslated(context, "MY_RIDES")!, () async {
                   // Navigator.pop(context);
@@ -433,6 +468,7 @@ class _AppDrawerState extends State<AppDrawer> {
 
                   },
                 ),*/
+                Divider(color: MyColorName.greyBorder,),
                 buildListTile(context, 'assets/star.png',
                     getTranslated(context, "MY_RATINGS")!, () async {
                   // Navigator.pop(context);
@@ -446,6 +482,7 @@ class _AppDrawerState extends State<AppDrawer> {
                   Navigator.pop(context);
                   /*Navigator.popAndPushNamed(context, PageRoutes.reviewsPage);*/
                 }),
+                Divider(color: MyColorName.greyBorder,),
 
                 buildListTile(
                     context, 'assets/privacypolicy.png', "Privacy Policy",
@@ -461,6 +498,7 @@ class _AppDrawerState extends State<AppDrawer> {
                   // }
                   // Navigator.pop(context);
                 }),
+                Divider(color: MyColorName.greyBorder,),
 
                 buildListTile(context, 'assets/termsandcondition.png',
                     "Terms and Conditions", () async {
@@ -478,6 +516,7 @@ class _AppDrawerState extends State<AppDrawer> {
                   // }
                   // Navigator.pop(context);
                 }),
+                Divider(color: MyColorName.greyBorder,),
 
                 buildListTile(
                     context,
@@ -534,6 +573,7 @@ class _AppDrawerState extends State<AppDrawer> {
                 //     getTranslated(context, "EmergencyCall")!, () {
                 //   launch("tel://${userNumber}");
                 // }),
+                Divider(color: MyColorName.greyBorder,),
 
                 buildListTile(
                     context, 'assets/faq.png', getTranslated(context, "FAQS")!,
@@ -553,6 +593,7 @@ class _AppDrawerState extends State<AppDrawer> {
                 //     MaterialPageRoute(builder: (context) => ContactUsPage()),
                 //   );
                 // }),
+                Divider(color: MyColorName.greyBorder,),
 
                 buildListTile(context, 'assets/logout.png',
                     getTranslated(context, "Logout")!, () {
@@ -561,7 +602,7 @@ class _AppDrawerState extends State<AppDrawer> {
                       // barrierDismissible: false,
                       builder: (BuildContext context) {
                         return AlertDialog(
-                          title: Text("Log Out"
+                          title: Text("Log Out",
                               // getTranslated(context, "Logout")!
                               ),
                           content: Text("Do you want to Logout ?"

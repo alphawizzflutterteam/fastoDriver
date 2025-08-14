@@ -6,6 +6,7 @@ import 'package:pristine_andaman_driver/Theme/style.dart';
 
 import '../../utils/ApiBaseHelper.dart';
 import '../../utils/Session.dart';
+import '../../utils/colors.dart';
 import '../../utils/constant.dart';
 import '../../utils/new_utils/ui.dart';
 
@@ -36,8 +37,12 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
             color: Colors.black,
           ),
         ),
-        backgroundColor: Colors.white,
-        title: Text('Privacy Policy',style: TextStyle(color: Colors.black),),
+        elevation: 4,
+        shadowColor: Colors.black.withOpacity(0.2),
+        backgroundColor: MyColorName.colorBg1,
+        title: Text('Privacy Policy',style: TextStyle(fontSize: 20,
+          fontFamily:  AppTheme.fontFamily,
+          color: MyColorName.secondary,),),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -46,7 +51,10 @@ class _PrivacyPolicyState extends State<PrivacyPolicy> {
           child: status
               ? Center(child: CircularProgressIndicator())
               : Column(
-            children: [Text(data.body.text)],
+            children: [Text(data.body.text,style: TextStyle(
+              fontFamily: AppTheme.fontFamily,
+              fontWeight: FontWeight.w500,
+              fontSize: 18),textAlign: TextAlign.justify)],
           ),
         ),
       ),

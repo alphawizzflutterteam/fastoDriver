@@ -15,6 +15,7 @@ import 'package:pristine_andaman_driver/utils/new_utils/ui.dart';
 import 'package:provider/provider.dart';
 
 import '../../../Model/GetSignInModel.dart';
+import '../../../Theme/style.dart';
 import '../../Login/UI/login_page.dart';
 import '../../Verification/UI/verification_page.dart';
 
@@ -106,114 +107,147 @@ class _SignInState extends State<SignIn> {
     var theme = Theme.of(context);
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(
+        child: Stack(
           children: [
-            SizedBox(
-              height: 100,
-            ),
-            Center(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Image.asset("assets/login_image.png", scale: 2),
-                  // SizedBox(width: 12),
-                  // Text("Pristine\nAndaman", style: TextStyle(fontSize: 28, color: AppTheme.primaryColor),),
-                ],
-              ),
-            ),
-            SizedBox(height: 40),
             Container(
-              width: (MediaQuery.of(context).size.width) - 40,
+              width: MediaQuery.of(context).size.width,
+              height: (MediaQuery.of(context).size.height) / 1.0,//past 1.5
               decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(17),
-              ),
-              child: Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Center(
-                      child: Text('SignIn To Your Account',
-                          style: TextStyle(
-                              fontSize: 25, fontWeight: FontWeight.w900)),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20.0),
-                      child: Text('We will send you a confirmation code'),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    TextFormField(
-                      keyboardType: TextInputType.phone,
-                      controller: _numberController,
-                      maxLength: 10,
-                      decoration: InputDecoration(
-                        fillColor: MyColorName.colorBg1,
-                        counterText: "",
-                        hintText: "Enter Number",
-                        hintStyle: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(5),
-                        ),
-                      ),
-                    ),
-                    SizedBox(height: 10),
-                    !loading
-                        ? Padding(
-                            padding: const EdgeInsets.symmetric(vertical: 10.0),
-                            child: GestureDetector(
-                              onTap: () {
-                                if (_numberController.text == "" ||
-                                    _numberController.text.length != 10) {
-                                  UI.setSnackBar(
-                                      "Please Enter Valid Mobile Number",
-                                      context);
-                                  return;
-                                }
-                                setState(() {
-                                  loading = true;
-                                });
-                                loginUser();
-                              },
-                              child: ButtonCustom(
-                                title: 'SEND OTP',
-                              ),
-                            ),
-                          )
-                        : Center(
-                            child: Container(
-                              width: 50,
-                              child: Center(
-                                child: CircularProgressIndicator(),
-                              ),
-                            ),
-                          ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                  ],
+                image: const DecorationImage(
+                  image: AssetImage('assets/background.png'),
+                  fit: BoxFit.cover, // responsive full screen
                 ),
               ),
             ),
-            InkWell(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => LoginPage(),
+            Column(
+              children: [
+                SizedBox(
+                  height: 100,
+                ),
+                Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Image.asset("assets/login_image.png", scale: 2),
+                      // SizedBox(width: 12),
+                      // Text("Pristine\nAndaman", style: TextStyle(fontSize: 28, color: AppTheme.primaryColor),),
+                    ],
                   ),
-                );
-              },
-              child: Text(
-                'All ready have an account? Login',
-                style:
-                    theme.textTheme.titleMedium!.copyWith(color: Colors.black),
-              ),
+                ),
+                SizedBox(height: 40),
+                Container(
+                  width: (MediaQuery.of(context).size.width) - 40,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(17),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Center(
+                          child: Text('SignIn To Your Account',
+                              style: TextStyle(
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w500,
+                                  fontFamily: AppTheme.fontFamily)),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 20.0),
+                          child: Text('We will send you a confirmation code'),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        TextFormField(
+                          keyboardType: TextInputType.phone,
+                          controller: _numberController,
+                          maxLength: 10,
+                          decoration: InputDecoration(
+                            fillColor: MyColorName.colorBg1,
+                            counterText: "",
+                            hintText: "Enter Number",
+                            hintStyle: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w500,
+                              fontFamily: AppTheme.fontFamily,),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: 10),
+                        !loading
+                            ? Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 10.0),
+                          child: GestureDetector(
+                            onTap: () {
+                              if (_numberController.text == "" ||
+                                  _numberController.text.length != 10) {
+                                UI.setSnackBar(
+                                    "Please Enter Valid Mobile Number",
+                                    context);
+                                return;
+                              }
+                              setState(() {
+                                loading = true;
+                              });
+                              loginUser();
+                            },
+                            child: ButtonCustom(
+                              title: 'SEND OTP',
+                            ),
+                          ),
+                        )
+                            : Center(
+                          child: Container(
+                            width: 50,
+                            child: Center(
+                              child: CircularProgressIndicator(),
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "All ready have an account? ",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontFamily: AppTheme.fontFamily,
+                          fontWeight:
+                          FontWeight.w500),),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginPage(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        'Login',
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: MyColorName.primaryLite,
+                            fontWeight: FontWeight.w500,
+                            fontFamily: AppTheme.fontFamily,)
+                      ),
+                    ),
+                  ],
+                ),
+                SizedBox()
+              ],
             ),
-            SizedBox()
           ],
         ),
       ),

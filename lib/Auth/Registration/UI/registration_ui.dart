@@ -1084,16 +1084,16 @@ class _RegistrationUIState extends State<RegistrationUI> {
           contentType: MediaType('image', 'jpeg'),
         ),
       );
-      // if (bankImage != null)
-      //   request.files.add(
-      //     http.MultipartFile(
-      //       'bank_chaque',
-      //       bankImage!.readAsBytes().asStream(),
-      //       bankImage!.lengthSync(),
-      //       filename: path.basename(bankImage!.path),
-      //       contentType: MediaType('image', 'jpeg'),
-      //     ),
-      //   );
+      if (bankImage != null)
+        request.files.add(
+          http.MultipartFile(
+            'bank_chaque',
+            bankImage!.readAsBytes().asStream(),
+            bankImage!.lengthSync(),
+            filename: path.basename(bankImage!.path),
+            contentType: MediaType('image', 'jpeg'),
+          ),
+        );
       if (insuranceImage != null)
         request.files.add(
           http.MultipartFile(

@@ -13,6 +13,9 @@ import 'package:pristine_andaman_driver/utils/constant.dart';
 import 'package:pristine_andaman_driver/utils/new_utils/ui.dart';
 import 'package:pristine_andaman_driver/utils/widget.dart';
 
+import '../Theme/style.dart';
+import '../utils/colors.dart';
+
 class FAQs {
   final Strings title;
   final Strings subtitle;
@@ -81,10 +84,14 @@ class _FaqPageState extends State<FaqPage> {
             color: Colors.black,
           ),
         ),
-        backgroundColor: Colors.white,
+        elevation: 4,
+        shadowColor: Colors.black.withOpacity(0.2),
+        backgroundColor: MyColorName.colorBg1,
         title: Text(
           'FAQs',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(fontSize: 20,
+            fontFamily:  AppTheme.fontFamily,
+            color: MyColorName.secondary,),
         ),
         centerTitle: true,
       ),
@@ -99,7 +106,9 @@ class _FaqPageState extends State<FaqPage> {
                 child: Text(
                   getTranslated(context, Strings.READ_FAQS)!,
                   style: theme.textTheme.headlineSmall!
-                      .copyWith(color: theme.hintColor),
+                      .copyWith(fontSize: 20,
+                    fontFamily:  AppTheme.fontFamily,
+                    color: MyColorName.secondary,),
                 ),
               ),
               SizedBox(height: 20),
