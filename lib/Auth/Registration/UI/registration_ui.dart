@@ -617,7 +617,7 @@ class _RegistrationUIState extends State<RegistrationUI> {
                             //             width: 50,
                             //             height: 50,
                             //             child: Center(
-                            //               child: CircularProgressIndicator(),
+                            //               child: CircularProgressIndicator(color: Colors.black),
                             //             ),
                             //           ),
                             //         ),
@@ -847,7 +847,8 @@ class _RegistrationUIState extends State<RegistrationUI> {
                                     child: SizedBox(
                                       width: 50,
                                       height: 50,
-                                      child: CircularProgressIndicator(),
+                                      child: CircularProgressIndicator(
+                                          color: Colors.black),
                                     ),
                                   ),
                           ],

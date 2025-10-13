@@ -45,27 +45,27 @@ class _CompleteRideDialogState extends State<CompleteRideDialog> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Padding(
-                  padding: EdgeInsets.all(16),
-                  child: Align(
-                    alignment: AlignmentDirectional.centerStart,
-                    child: IconButton(
-                      icon: Icon(Icons.arrow_back),
-                      color: Theme.of(context).primaryColor,
-                      onPressed: () {
-                        Navigator.pop(context);
-                        //  Navigator.pop(context);
-                        // Navigator.pushAndRemoveUntil(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => SearchLocationPage()),
-                        //         (route) => false);
-                      },
-                    ),
-                  ),
-                ),
+                // Padding(
+                //   padding: EdgeInsets.all(16),
+                //   child: Align(
+                //     alignment: AlignmentDirectional.centerStart,
+                //     child: IconButton(
+                //       icon: Icon(Icons.arrow_back),
+                //       color: Theme.of(context).primaryColor,
+                //       onPressed: () {
+                //         Navigator.pop(context);
+                //         //  Navigator.pop(context);
+                //         // Navigator.pushAndRemoveUntil(
+                //         //     context,
+                //         //     MaterialPageRoute(
+                //         //         builder: (context) => SearchLocationPage()),
+                //         //         (route) => false);
+                //       },
+                //     ),
+                //   ),
+                // ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20),
@@ -76,29 +76,23 @@ class _CompleteRideDialogState extends State<CompleteRideDialog> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              height: 60,
-                              width: 60,
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(12),
-                                child: Image.network(
-                                  // imagePath +
-                                  widget.model.userImage.toString(),
-                                  height: 72,
-                                  width: 72,
-                                  errorBuilder: (context, error, stackTrace) {
-                                    return Container(
-                                      color: Colors.grey[
-                                          300], // Placeholder background color
-                                      child: Icon(
-                                        Icons.person, // Avatar fallback icon
-                                        size: 36,
-                                        color: Colors.grey[600],
-                                      ),
-                                    );
-                                  },
-                                ),
+                            CircleAvatar(
+                              radius: 30, // half of 60x60
+                              backgroundColor: Colors.grey[300],
+                              backgroundImage: NetworkImage(
+                                widget.model.userImage.toString(),
                               ),
+                              onBackgroundImageError: (_, __) {
+                                // This handles broken image
+                              },
+                              child: widget.model.userImage == null ||
+                                      widget.model.userImage.toString().isEmpty
+                                  ? Icon(
+                                      Icons.person,
+                                      size: 36,
+                                      color: Colors.grey[600],
+                                    )
+                                  : null,
                             ),
                             SizedBox(height: 10),
                             Text(
@@ -138,11 +132,8 @@ class _CompleteRideDialogState extends State<CompleteRideDialog> {
                             SizedBox(height: 4),
                             Text(
                               '\u{20B9} ${widget.model.finalTotal}',
-                              style: Theme.of(context)
-                                  .textTheme
-                                  .headlineSmall!
-                                  .copyWith(
-                                      color: Theme.of(context).primaryColor),
+                              style: theme.textTheme.headlineSmall!.copyWith(
+                                  color: theme.primaryColor, fontSize: 16.5),
                             ),
                             SizedBox(height: 24),
                             Text(
@@ -179,23 +170,25 @@ class _CompleteRideDialogState extends State<CompleteRideDialog> {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                // SizedBox(
+                //   height: 20,
+                // ),
                 ListTile(
-                  title: Text(
-                    getTranslated(context, 'RIDE_INFO')!,
-                    style: theme.textTheme.headlineSmall!
-                        .copyWith(color: theme.hintColor, fontSize: 16.5),
-                  ),
-                  trailing: Text('${widget.model.km} km',
-                      style: theme.textTheme.headlineSmall),
-                ),
+                    title: Text(
+                      getTranslated(context, 'RIDE_INFO')!,
+                      style: theme.textTheme.headlineSmall!
+                          .copyWith(color: theme.hintColor, fontSize: 16.5),
+                    ),
+                    trailing: Text(
+                      '${widget.model.km} km',
+                      style: theme.textTheme.headlineSmall!
+                          .copyWith(color: theme.hintColor, fontSize: 16.5),
+                    )),
                 ListTile(
                   horizontalTitleGap: 0,
                   leading: Icon(
                     Icons.location_on,
-                    color: theme.primaryColor,
+                    color: Colors.red,
                   ),
                   title: Text(
                     '${widget.model.pickupAddress}',
@@ -213,9 +206,9 @@ class _CompleteRideDialogState extends State<CompleteRideDialog> {
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.w500),
                   ),
                 ),
-                SizedBox(
-                  height: 20,
-                ),
+                // SizedBox(
+                //   height: 20,
+                // ),
                 // Divider(),
                 // SizedBox(
                 //   height: 20,
@@ -291,7 +284,7 @@ class _CompleteRideDialogState extends State<CompleteRideDialog> {
                         text: getTranslated(context, 'SUBMIT'),
                       )
                     : Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator(color: Colors.black),
                       ),
               ],
             ),
@@ -562,7 +555,7 @@ class _RateRideDialog1State extends State<RateRideDialog1> {
                         text: getTranslated(context, 'SUBMIT'),
                       )
                     : Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator(color: Colors.black),
                       ),
               ],
             ),

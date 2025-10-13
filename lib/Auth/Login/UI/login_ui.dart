@@ -184,9 +184,10 @@ class _LoginUIState extends State<LoginUI> {
                             counterText: "",
                             hintText: "Enter Number",
                             hintStyle: TextStyle(
-                                color: MyColorName.secondary,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: AppTheme.fontFamily,),
+                              color: MyColorName.secondary,
+                              fontWeight: FontWeight.bold,
+                              fontFamily: AppTheme.fontFamily,
+                            ),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(5),
                             ),
@@ -220,7 +221,8 @@ class _LoginUIState extends State<LoginUI> {
                                 child: Container(
                                   width: 50,
                                   child: Center(
-                                    child: CircularProgressIndicator(),
+                                    child: CircularProgressIndicator(
+                                        color: Colors.black),
                                   ),
                                 ),
                               ),
@@ -232,16 +234,15 @@ class _LoginUIState extends State<LoginUI> {
                   ),
                 ),
                 Row(
-                  mainAxisAlignment:
-                  MainAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       "Don't have account? ",
                       style: TextStyle(
                           fontSize: 18,
                           fontFamily: AppTheme.fontFamily,
-                          fontWeight:
-                          FontWeight.w500),),
+                          fontWeight: FontWeight.w500),
+                    ),
                     InkWell(
                       onTap: () {
                         // Navigator.push(
@@ -257,14 +258,13 @@ class _LoginUIState extends State<LoginUI> {
                           ),
                         );
                       },
-                      child: Text(
-                          'Sign Up',
+                      child: Text('Sign Up',
                           style: TextStyle(
                             fontSize: 18,
                             color: MyColorName.primaryLite,
                             fontWeight: FontWeight.w500,
-                            fontFamily: AppTheme.fontFamily,)
-                      ),
+                            fontFamily: AppTheme.fontFamily,
+                          )),
                     ),
                   ],
                 ),

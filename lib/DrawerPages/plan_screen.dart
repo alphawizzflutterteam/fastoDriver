@@ -1,11 +1,9 @@
-import 'package:intl/intl.dart';
-import 'package:pristine_andaman_driver/utils/Razorpay.dart';
-import 'package:pristine_andaman_driver/utils/new_utils/ui.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:intl/intl.dart';
 import 'package:pristine_andaman_driver/Model/plan_model.dart';
-
 import 'package:pristine_andaman_driver/utils/ApiBaseHelper.dart';
+import 'package:pristine_andaman_driver/utils/Razorpay.dart';
 import 'package:pristine_andaman_driver/utils/colors.dart';
 import 'package:pristine_andaman_driver/utils/constant.dart';
 import 'package:pristine_andaman_driver/utils/new_utils/common_ui.dart';
@@ -154,16 +152,20 @@ class _PlanScreenState extends State<PlanScreen> {
                       ),
                       tileColor: MyColorName.primaryDark,
                       trailing: Text(
-                         (Common.myPlanModel!.type ?? ''),
+                        (Common.myPlanModel!.type ?? ''),
                         style: Theme.of(context)
                             .textTheme
                             .titleMedium!
-                            .copyWith(
-                            color: Colors.white),
+                            .copyWith(color: Colors.white),
                       ),
-                      title: Text("${Common.myPlanModel!.title}-Purchased",style: TextStyle(color: Colors.white),),
+                      title: Text(
+                        "${Common.myPlanModel!.title}-Purchased",
+                        style: TextStyle(color: Colors.white),
+                      ),
                       subtitle: Text(
-                          "Ends on ${DateFormat("dd MMM yy").format(DateTime.parse(Common.myPlanModel!.endDate ?? '0000-00-00'))}",style: TextStyle(color: Colors.white),),
+                        "Ends on ${DateFormat("dd MMM yy").format(DateTime.parse(Common.myPlanModel!.endDate ?? '0000-00-00'))}",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   Expanded(
                       child: ListView.builder(
@@ -218,7 +220,9 @@ class _PlanScreenState extends State<PlanScreen> {
                                               ],
                                             ),
                                           ),
-                                          SizedBox(width: 8,),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Expanded(
                                             child: UI.commonButton(
                                                 title: model.title ?? '',
@@ -288,7 +292,7 @@ class _PlanScreenState extends State<PlanScreen> {
               ),
             ),
           ),
-          if (loading) CircularProgressIndicator(),
+          if (loading) CircularProgressIndicator(color: Colors.black),
         ],
       ),
     );

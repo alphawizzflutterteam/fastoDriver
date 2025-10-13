@@ -51,6 +51,7 @@ class PushNotificationService {
       onDidReceiveNotificationResponse:
           (NotificationResponse notificationResponse) {
         final payload = notificationResponse.payload ?? '';
+        print("hererer payload data ${payload}");
         Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(builder: (context) => OfflinePage(payload)),
@@ -106,6 +107,7 @@ class PushNotificationService {
       SharedPreferences prefs = await SharedPreferences.getInstance();
       var test = message.data;
       bookingId = test['Booking_id'];
+      print("booking id in notification ${bookingId}");
       if (test['booking_type'] == 'current') {
         onResult(bookingId);
       }

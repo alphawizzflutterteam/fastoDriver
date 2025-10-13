@@ -111,7 +111,7 @@ class _SignInState extends State<SignIn> {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: (MediaQuery.of(context).size.height) / 1.0,//past 1.5
+              height: (MediaQuery.of(context).size.height) / 1.0, //past 1.5
               decoration: BoxDecoration(
                 image: const DecorationImage(
                   image: AssetImage('assets/background.png'),
@@ -171,7 +171,8 @@ class _SignInState extends State<SignIn> {
                             hintStyle: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
-                              fontFamily: AppTheme.fontFamily,),
+                              fontFamily: AppTheme.fontFamily,
+                            ),
                             border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(5),
                             ),
@@ -180,34 +181,36 @@ class _SignInState extends State<SignIn> {
                         SizedBox(height: 10),
                         !loading
                             ? Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 10.0),
-                          child: GestureDetector(
-                            onTap: () {
-                              if (_numberController.text == "" ||
-                                  _numberController.text.length != 10) {
-                                UI.setSnackBar(
-                                    "Please Enter Valid Mobile Number",
-                                    context);
-                                return;
-                              }
-                              setState(() {
-                                loading = true;
-                              });
-                              loginUser();
-                            },
-                            child: ButtonCustom(
-                              title: 'SEND OTP',
-                            ),
-                          ),
-                        )
+                                padding:
+                                    const EdgeInsets.symmetric(vertical: 10.0),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    if (_numberController.text == "" ||
+                                        _numberController.text.length != 10) {
+                                      UI.setSnackBar(
+                                          "Please Enter Valid Mobile Number",
+                                          context);
+                                      return;
+                                    }
+                                    setState(() {
+                                      loading = true;
+                                    });
+                                    loginUser();
+                                  },
+                                  child: ButtonCustom(
+                                    title: 'SEND OTP',
+                                  ),
+                                ),
+                              )
                             : Center(
-                          child: Container(
-                            width: 50,
-                            child: Center(
-                              child: CircularProgressIndicator(),
-                            ),
-                          ),
-                        ),
+                                child: Container(
+                                  width: 50,
+                                  child: Center(
+                                    child: CircularProgressIndicator(
+                                        color: Colors.black),
+                                  ),
+                                ),
+                              ),
                         SizedBox(
                           height: 10,
                         ),
@@ -223,8 +226,8 @@ class _SignInState extends State<SignIn> {
                       style: TextStyle(
                           fontSize: 18,
                           fontFamily: AppTheme.fontFamily,
-                          fontWeight:
-                          FontWeight.w500),),
+                          fontWeight: FontWeight.w500),
+                    ),
                     InkWell(
                       onTap: () {
                         Navigator.push(
@@ -234,14 +237,13 @@ class _SignInState extends State<SignIn> {
                           ),
                         );
                       },
-                      child: Text(
-                        'Login',
+                      child: Text('Login',
                           style: TextStyle(
                             fontSize: 18,
                             color: MyColorName.primaryLite,
                             fontWeight: FontWeight.w500,
-                            fontFamily: AppTheme.fontFamily,)
-                      ),
+                            fontFamily: AppTheme.fontFamily,
+                          )),
                     ),
                   ],
                 ),

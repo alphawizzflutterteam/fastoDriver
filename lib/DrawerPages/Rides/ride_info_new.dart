@@ -1510,7 +1510,7 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                   isCentered: true,
                                   textColor: Colors.white)),
                         )
-                      : CircularProgressIndicator(),
+                      : CircularProgressIndicator(color: Colors.black),
                 ),
                 boxWidth(10),
                 InkWell(
@@ -1535,7 +1535,7 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                   isCentered: true,
                                   textColor: Colors.white)),
                         )
-                      : CircularProgressIndicator(),
+                      : CircularProgressIndicator(color: Colors.black),
                 ),
               ],
             ),
@@ -1722,25 +1722,42 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                                 ),
                                                 Row(
                                                   children: [
-                                                    Card(
-                                                      margin: EdgeInsets.zero,
-                                                      elevation: 0,
-                                                      color:
-                                                          Colors.grey.shade100,
-                                                      child: Padding(
-                                                        padding:
-                                                            const EdgeInsets
-                                                                .all(4.0),
-                                                        child: Text(
-                                                          '${widget.model.vehicleNo}',
-                                                          // "Hatchback",
-                                                          style: TextStyle(
-                                                              color: AppTheme
-                                                                  .primaryColor,
-                                                              fontSize: 12),
-                                                        ),
-                                                      ),
-                                                    ),
+                                                    // Card(
+                                                    //   margin: EdgeInsets.zero,
+                                                    //   elevation: 0,
+                                                    //   color:
+                                                    //       Colors.grey.shade100,
+                                                    //   child: Padding(
+                                                    //     padding:
+                                                    //         const EdgeInsets
+                                                    //             .all(4.0),
+                                                    //     child: Text(
+                                                    //       '${widget.model.vehicleNo}',
+                                                    //       // "Hatchback",
+                                                    //       style: TextStyle(
+                                                    //           color: AppTheme
+                                                    //               .primaryColor,
+                                                    //           fontSize: 12),
+                                                    //     ),
+                                                    //   ),
+                                                    // ),
+                                                    widget.model.orderType ==
+                                                                null ||
+                                                            widget.model
+                                                                    .orderType ==
+                                                                'null'
+                                                        ? SizedBox()
+                                                        : Text(
+                                                            '${widget.model.orderType ?? ''}',
+                                                            textAlign:
+                                                                TextAlign.end,
+                                                            style: theme
+                                                                .textTheme
+                                                                .bodySmall!
+                                                                .copyWith(
+                                                              fontSize: 15,
+                                                            ),
+                                                          ),
                                                     Spacer(),
                                                     Text(
                                                       getString1(widget
@@ -1756,23 +1773,6 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                                     ),
                                                   ],
                                                 ),
-                                                SizedBox(height: 4),
-                                                widget.model.orderType ==
-                                                            null ||
-                                                        widget.model
-                                                                .orderType ==
-                                                            'null'
-                                                    ? SizedBox()
-                                                    : Text(
-                                                        '${widget.model.orderType ?? ''}',
-                                                        textAlign:
-                                                            TextAlign.end,
-                                                        style: theme.textTheme
-                                                            .bodySmall!
-                                                            .copyWith(
-                                                          fontSize: 15,
-                                                        ),
-                                                      ),
                                                 SizedBox(height: 4),
                                                 Row(
                                                   mainAxisAlignment:
@@ -2123,7 +2123,7 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                                     fontWeight:
                                                         FontWeight.w700),
                                               ),
-                                              SizedBox(height: 12),
+                                              // SizedBox(height: 12),
                                               // Row(
                                               //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                               //   children: [
@@ -2659,29 +2659,40 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                                     )
                                                   : SizedBox(),
 
-                                              // double.parse((widget.model.amount ?? '0').toString()) > 0
-                                              //     ? Row(
-                                              //         mainAxisAlignment:
-                                              //             MainAxisAlignment.spaceBetween,
-                                              //         children: [
-                                              //           text("Sub Total : ",
-                                              //               fontSize: 10.sp,
-                                              //               fontFamily: fontMedium,
-                                              //               textColor: Colors.black),
-                                              //           text(
-                                              //               "₹" +
-                                              //                   (double.parse((widget.model.amount ?? '0')
-                                              //                               .toString()) +
-                                              //                           double.parse((widget.model.promoDiscount ?? '0')
-                                              //                               .toString()))
-                                              //                       .toStringAsFixed(2),
-                                              //               fontSize: 10.sp,
-                                              //               fontFamily: fontMedium,
-                                              //               textColor: Colors.black),
-                                              //         ],
-                                              //       )
-                                              //     : SizedBox(),
-                                              //
+                                              double.parse((widget.model
+                                                                  .amount ??
+                                                              '0')
+                                                          .toString()) >
+                                                      0
+                                                  ? Row(
+                                                      mainAxisAlignment:
+                                                          MainAxisAlignment
+                                                              .spaceBetween,
+                                                      children: [
+                                                        text("Sub Total : ",
+                                                            fontSize: 10.sp,
+                                                            fontFamily:
+                                                                fontMedium,
+                                                            textColor:
+                                                                Colors.black),
+                                                        text(
+                                                            "₹" +
+                                                                (double.parse((widget.model.amount ??
+                                                                                '0')
+                                                                            .toString()) +
+                                                                        double.parse((widget.model.promoDiscount ??
+                                                                                '0')
+                                                                            .toString()))
+                                                                    .toStringAsFixed(
+                                                                        2),
+                                                            fontSize: 10.sp,
+                                                            fontFamily:
+                                                                fontMedium,
+                                                            textColor:
+                                                                Colors.black),
+                                                      ],
+                                                    )
+                                                  : SizedBox(),
                                               widget.model.promoDiscount
                                                               .toString() ==
                                                           null ||
@@ -2930,7 +2941,7 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                               //                           ],
                                               //                         )),
                                               //                       )
-                                              //                       // :CircularProgressIndicator(),
+                                              //                       // :CircularProgressIndicator(color: Colors.black),
                                               //                       )
                                               //                   : SizedBox()
                                               //               : InkWell(
@@ -2990,7 +3001,7 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                                               //                             ],
                                               //                           )),
                                               //                         )
-                                              //                       : CircularProgressIndicator(),
+                                              //                       : CircularProgressIndicator(color: Colors.black),
                                               //                 ),
                                               //         ],
                                               //       )
@@ -3217,7 +3228,9 @@ class _RideInfoNewState extends State<RideInfoNew> with WidgetsBindingObserver {
                       ),
                     )
                   : Center(
-                      child: CircularProgressIndicator(),
+                      child: CircularProgressIndicator(
+                        color: Colors.black,
+                      ),
                     ),
               bottomNavigationBar: /*!widget.complete &&*/
                   widget.model.driverStatus != "4" &&

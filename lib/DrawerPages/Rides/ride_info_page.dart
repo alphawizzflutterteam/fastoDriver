@@ -1,13 +1,11 @@
 import 'dart:async';
 import 'dart:io';
 
-import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:pristine_andaman_driver/BookRide/complete_ride_dialog.dart';
 import 'package:pristine_andaman_driver/Components/row_item.dart';
-import 'package:pristine_andaman_driver/DrawerPages/Rides/my_rides_page.dart';
 import 'package:pristine_andaman_driver/Model/my_ride_model.dart';
 import 'package:pristine_andaman_driver/Model/reason_model.dart';
 import 'package:pristine_andaman_driver/utils/ApiBaseHelper.dart';
@@ -629,7 +627,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                   isCentered: true,
                                   textColor: Colors.white)),
                         )
-                      : CircularProgressIndicator(),
+                      : CircularProgressIndicator(color: Colors.black),
                 ),
                 boxWidth(10),
                 InkWell(
@@ -654,7 +652,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                   isCentered: true,
                                   textColor: Colors.white)),
                         )
-                      : CircularProgressIndicator(),
+                      : CircularProgressIndicator(color: Colors.black),
                 ),
               ],
             ),
@@ -891,7 +889,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                           //                 ],
                                           //               )),
                                           //             )
-                                          //             // :CircularProgressIndicator(),
+                                          //             // :CircularProgressIndicator(color: Colors.black),
                                           //             )
                                           //         : SizedBox()
                                           //     :
@@ -953,7 +951,8 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                       ],
                                                     )),
                                                   )
-                                                : CircularProgressIndicator(),
+                                                : CircularProgressIndicator(
+                                                    color: Colors.black),
                                           ),
                                         ],
                                       )
@@ -1425,7 +1424,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                       ),
                     )
               : Center(
-                  child: CircularProgressIndicator(),
+                  child: CircularProgressIndicator(color: Colors.black),
                 ),
           bottomNavigationBar: widget.check == null
               ? SingleChildScrollView(
@@ -1435,28 +1434,28 @@ class _RideInfoPageState extends State<RideInfoPage>
                       mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        !widget.model.bookingType!.contains("Point")
-                            ? AnimatedTextKit(
-                                animatedTexts: [
-                                  ColorizeAnimatedText(
-                                    "Schedule - ${widget.model.pickupDate} ${widget.model.pickupTime}",
-                                    textStyle: colorizeTextStyle,
-                                    colors: colorizeColors,
-                                  ),
-                                ],
-                                pause: Duration(milliseconds: 100),
-                                isRepeatingAnimation: true,
-                                totalRepeatCount: 100,
-                                onTap: () {
-                                  print("Tap Event");
-                                },
-                              )
-                            : SizedBox(),
+                        // !widget.model.bookingType!.contains("Point")
+                        //     ? AnimatedTextKit(
+                        //         animatedTexts: [
+                        //           ColorizeAnimatedText(
+                        //             "Schedule - ${widget.model.pickupDate} ${widget.model.pickupTime}",
+                        //             textStyle: colorizeTextStyle,
+                        //             colors: colorizeColors,
+                        //           ),
+                        //         ],
+                        //         pause: Duration(milliseconds: 100),
+                        //         isRepeatingAnimation: true,
+                        //         totalRepeatCount: 100,
+                        //         onTap: () {
+                        //           print("Tap Event");
+                        //         },
+                        //       )
+                        //     : SizedBox(),
                         Container(
                           height: 100,
                           padding: EdgeInsets.all(getWidth(10)),
                           decoration: BoxDecoration(
-                            color: theme.colorScheme.background,
+                            // color: theme.colorScheme.background,
                             borderRadius: BorderRadius.circular(16),
                           ),
                           child: Row(
@@ -1480,20 +1479,14 @@ class _RideInfoPageState extends State<RideInfoPage>
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(
-                                      widget.model.username.toString(),
-                                      style: theme.textTheme.headlineSmall,
-                                    ),
+                                    Text(widget.model.username.toString(),
+                                        style: TextStyle(fontSize: 18)),
                                     Spacer(flex: 2),
-                                    Text(
-                                      getTranslated(context, "BOOKED_ON")!,
-                                      style: theme.textTheme.headlineSmall,
-                                    ),
+                                    Text(getTranslated(context, "BOOKED_ON")!,
+                                        style: TextStyle(fontSize: 18)),
                                     Spacer(),
-                                    Text(
-                                      '${widget.model.dateAdded}',
-                                      style: theme.textTheme.bodySmall,
-                                    ),
+                                    Text('${widget.model.dateAdded}',
+                                        style: TextStyle(fontSize: 15)),
                                   ],
                                 ),
                               ),
@@ -1520,14 +1513,15 @@ class _RideInfoPageState extends State<RideInfoPage>
                                           bgColor:
                                               Theme.of(context).primaryColor),
                                       child: Center(
-                                          child: text(
-                                              !showMore
-                                                  ? "View More"
-                                                  : "View Less",
-                                              fontFamily: fontMedium,
-                                              fontSize: 8.sp,
-                                              isCentered: true,
-                                              textColor: Colors.white)),
+                                        child: text(
+                                            !showMore
+                                                ? "View More"
+                                                : "View Less",
+                                            fontFamily: fontRegular,
+                                            fontSize: 10.sp,
+                                            isCentered: true,
+                                            textColor: Colors.white),
+                                      ),
                                     ),
                                   ),
                                 ],
@@ -1559,74 +1553,61 @@ class _RideInfoPageState extends State<RideInfoPage>
                             ],
                           ),
                         ),
-                        SizedBox(height: 12),
+                        // SizedBox(height: 12),
                         showMore
                             ? Column(
                                 children: [
-                                  Container(
-                                    decoration: BoxDecoration(
-                                        color: theme.colorScheme.background,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    child: Column(
-                                      children: [
-                                        ListTile(
-                                          title: Text(
-                                            getTranslated(
-                                                context, "RIDE_INFO")!,
+                                  Column(
+                                    children: [
+                                      ListTile(
+                                        title: Text(
+                                          getTranslated(context, "RIDE_INFO")!,
+                                          style: theme.textTheme.headlineSmall!
+                                              .copyWith(
+                                                  color: theme.hintColor,
+                                                  fontSize: 15),
+                                        ),
+                                        trailing: Text('${widget.model.km} km',
                                             style: theme
                                                 .textTheme.headlineSmall!
-                                                .copyWith(
-                                                    color: theme.hintColor,
-                                                    fontSize: 18),
-                                          ),
-                                          trailing: Text(
-                                              '${widget.model.km} km',
-                                              style: theme
-                                                  .textTheme.headlineSmall!
-                                                  .copyWith(fontSize: 18)),
+                                                .copyWith(fontSize: 15)),
+                                      ),
+                                      ListTile(
+                                        leading: Icon(
+                                          Icons.location_on,
+                                          color: Colors.red,
                                         ),
-                                        ListTile(
-                                          leading: Icon(
-                                            Icons.location_on,
-                                            color: theme.primaryColor,
-                                          ),
-                                          title: Text(
-                                              '${widget.model.pickupAddress}'),
+                                        title: Text(
+                                            '${widget.model.pickupAddress}'),
+                                      ),
+                                      ListTile(
+                                        leading: Icon(
+                                          Icons.navigation,
+                                          color: theme.primaryColor,
                                         ),
-                                        ListTile(
-                                          leading: Icon(
-                                            Icons.navigation,
-                                            color: theme.primaryColor,
-                                          ),
-                                          title: Text(
-                                              '${widget.model.dropAddress}'),
-                                        ),
-                                      ],
-                                    ),
+                                        title:
+                                            Text('${widget.model.dropAddress}'),
+                                      ),
+                                    ],
                                   ),
-                                  SizedBox(height: 12),
-                                  Container(
-                                    padding: EdgeInsets.all(10),
-                                    decoration: BoxDecoration(
-                                        color: theme.colorScheme.background,
-                                        borderRadius: BorderRadius.vertical(
-                                            top: Radius.circular(16))),
+                                  // SizedBox(height: 12),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 15),
                                     child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
                                       children: [
                                         RowItem(
                                             getTranslated(
                                                 context, "PAYMENT_VIA"),
                                             '${widget.model.transaction}',
                                             Icons.account_balance_wallet),
-                                        SizedBox(
-                                          width: 10,
-                                        ),
+
                                         // Spacer(),
-                                        RowItem(
-                                            getTranslated(context, "RIDE_FARE"),
-                                            '\u{20B9} ${widget.model.amount}',
-                                            Icons.account_balance_wallet),
+                                        // RowItem(
+                                        //     getTranslated(context, "RIDE_FARE"),
+                                        //     '\u{20B9} ${widget.model.amount}',
+                                        //     Icons.account_balance_wallet),
                                         // Spacer(),
                                         RowItem(
                                             getTranslated(context, "RIDE_TYPE"),
@@ -1648,12 +1629,12 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                         .spaceBetween,
                                                 children: [
                                                   text("Base fare : ",
-                                                      fontSize: 10.sp,
+                                                      fontSize: 12.sp,
                                                       fontFamily: fontRegular,
                                                       textColor: Colors.black),
                                                   text(
                                                       "₹ ${double.parse(widget.model.baseFare.toString()).toStringAsFixed(2)}",
-                                                      fontSize: 10.sp,
+                                                      fontSize: 12.sp,
                                                       fontFamily: fontRegular,
                                                       textColor: Colors.black),
                                                 ],
@@ -1672,7 +1653,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                             .spaceBetween,
                                                     children: [
                                                       text("Kilometers : ",
-                                                          fontSize: 10.sp,
+                                                          fontSize: 12.sp,
                                                           fontFamily:
                                                               fontRegular,
                                                           textColor:
@@ -1680,7 +1661,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                       text(
                                                           widget.model.km
                                                               .toString(),
-                                                          fontSize: 10.sp,
+                                                          fontSize: 12.sp,
                                                           fontFamily:
                                                               fontRegular,
                                                           textColor:
@@ -1731,84 +1712,84 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                         .spaceBetween,
                                                 children: [
                                                   text("Taxes : ",
-                                                      fontSize: 10.sp,
+                                                      fontSize: 12.sp,
                                                       fontFamily: fontMedium,
                                                       textColor: Colors.black),
                                                   text(
                                                       "₹" +
                                                           widget.model.gstAmount
                                                               .toString(),
-                                                      fontSize: 10.sp,
+                                                      fontSize: 12.sp,
                                                       fontFamily: fontMedium,
                                                       textColor: Colors.black),
                                                 ],
                                               )
                                             : SizedBox(),
-                                        double.parse(widget
-                                                    .model.cancelChargeNew
-                                                    .toString()) >
-                                                0
-                                            ? Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  text(
-                                                      "Last ride cancellation charge : ",
-                                                      fontSize: 10.sp,
-                                                      fontFamily: fontMedium,
-                                                      textColor: Colors.black),
-                                                  text(
-                                                      "₹" +
-                                                          widget.model
-                                                              .cancelChargeNew
-                                                              .toString(),
-                                                      fontSize: 10.sp,
-                                                      fontFamily: fontMedium,
-                                                      textColor: Colors.black),
-                                                ],
-                                              )
-                                            : SizedBox(),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            text("Service Charge : ",
-                                                fontSize: 10.sp,
-                                                fontFamily: fontMedium,
-                                                textColor: Colors.black),
-                                            text(
-                                                "₹" +
-                                                    widget.model.service_charge
-                                                        .toString(),
-                                                fontSize: 10.sp,
-                                                fontFamily: fontMedium,
-                                                textColor: Colors.black),
-                                          ],
-                                        ),
-                                        double.parse(widget.model.surgeAmount
-                                                    .toString()) >
-                                                0
-                                            ? Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: [
-                                                  text("Surge Amount : ",
-                                                      fontSize: 10.sp,
-                                                      fontFamily: fontMedium,
-                                                      textColor: Colors.black),
-                                                  text(
-                                                      "₹" +
-                                                          widget
-                                                              .model.surgeAmount
-                                                              .toString(),
-                                                      fontSize: 10.sp,
-                                                      fontFamily: fontMedium,
-                                                      textColor: Colors.black),
-                                                ],
-                                              )
-                                            : SizedBox(),
+                                        // double.parse(widget
+                                        //             .model.cancelChargeNew
+                                        //             .toString()) >
+                                        //         0
+                                        //     ? Row(
+                                        //         mainAxisAlignment:
+                                        //             MainAxisAlignment
+                                        //                 .spaceBetween,
+                                        //         children: [
+                                        //           text(
+                                        //               "Last ride cancellation charge : ",
+                                        //               fontSize: 10.sp,
+                                        //               fontFamily: fontMedium,
+                                        //               textColor: Colors.black),
+                                        //           text(
+                                        //               "₹" +
+                                        //                   widget.model
+                                        //                       .cancelChargeNew
+                                        //                       .toString(),
+                                        //               fontSize: 10.sp,
+                                        //               fontFamily: fontMedium,
+                                        //               textColor: Colors.black),
+                                        //         ],
+                                        //       )
+                                        //     : SizedBox(),
+                                        // Row(
+                                        //   mainAxisAlignment:
+                                        //       MainAxisAlignment.spaceBetween,
+                                        //   children: [
+                                        //     text("Service Charge : ",
+                                        //         fontSize: 10.sp,
+                                        //         fontFamily: fontMedium,
+                                        //         textColor: Colors.black),
+                                        //     text(
+                                        //         "₹" +
+                                        //             widget.model.service_charge
+                                        //                 .toString(),
+                                        //         fontSize: 10.sp,
+                                        //         fontFamily: fontMedium,
+                                        //         textColor: Colors.black),
+                                        //   ],
+                                        // ),
+                                        // double.parse(widget.model.surgeAmount
+                                        //             .toString()) >
+                                        //         0
+                                        //     ? Row(
+                                        //         mainAxisAlignment:
+                                        //             MainAxisAlignment
+                                        //                 .spaceBetween,
+                                        //         children: [
+                                        //           text("Surge Amount : ",
+                                        //               fontSize: 10.sp,
+                                        //               fontFamily: fontMedium,
+                                        //               textColor: Colors.black),
+                                        //           text(
+                                        //               "₹" +
+                                        //                   widget
+                                        //                       .model.surgeAmount
+                                        //                       .toString(),
+                                        //               fontSize: 10.sp,
+                                        //               fontFamily: fontMedium,
+                                        //               textColor: Colors.black),
+                                        //         ],
+                                        //       )
+                                        //     : SizedBox(),
                                         double.parse(widget.model.amount
                                                     .toString()) >
                                                 0
@@ -1818,7 +1799,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                         .spaceBetween,
                                                 children: [
                                                   text("Sub Total : ",
-                                                      fontSize: 10.sp,
+                                                      fontSize: 12.sp,
                                                       fontFamily: fontMedium,
                                                       textColor: Colors.black),
                                                   text(
@@ -1836,7 +1817,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                       //             .toString()))
                                                       //     .toStringAsFixed(
                                                       //         2),
-                                                      fontSize: 10.sp,
+                                                      fontSize: 12.sp,
                                                       fontFamily: fontMedium,
                                                       textColor: Colors.black),
                                                 ],
@@ -1858,7 +1839,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                             .spaceBetween,
                                                     children: [
                                                       text("Promo Discount : ",
-                                                          fontSize: 10.sp,
+                                                          fontSize: 12.sp,
                                                           fontFamily:
                                                               fontRegular,
                                                           textColor:
@@ -1868,7 +1849,7 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                               widget.model
                                                                   .promoDiscount
                                                                   .toString(),
-                                                          fontSize: 10.sp,
+                                                          fontSize: 12.sp,
                                                           fontFamily:
                                                               fontRegular,
                                                           textColor:
@@ -1876,36 +1857,36 @@ class _RideInfoPageState extends State<RideInfoPage>
                                                     ],
                                                   )
                                                 : SizedBox(),
-                                        Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            text("Coins Used : ",
-                                                fontSize: 10.sp,
-                                                fontFamily: fontMedium,
-                                                textColor: Colors.black),
-                                            text(
-                                                "-₹" +
-                                                    widget.model!.pointUsed
-                                                        .toString(),
-                                                fontSize: 10.sp,
-                                                fontFamily: fontMedium,
-                                                textColor: Colors.black),
-                                          ],
-                                        ),
+                                        // Row(
+                                        //   mainAxisAlignment:
+                                        //       MainAxisAlignment.spaceBetween,
+                                        //   children: [
+                                        //     text("Coins Used : ",
+                                        //         fontSize: 10.sp,
+                                        //         fontFamily: fontMedium,
+                                        //         textColor: Colors.black),
+                                        //     text(
+                                        //         "-₹" +
+                                        //             widget.model!.pointUsed
+                                        //                 .toString(),
+                                        //         fontSize: 10.sp,
+                                        //         fontFamily: fontMedium,
+                                        //         textColor: Colors.black),
+                                        //   ],
+                                        // ),
                                         Divider(),
                                         Row(
                                           mainAxisAlignment:
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             text("Total : ",
-                                                fontSize: 10.sp,
+                                                fontSize: 12.sp,
                                                 fontFamily: fontMedium,
                                                 textColor: Colors.black),
                                             text(
                                                 "₹" +
                                                     "${widget.model.finalTotal}",
-                                                fontSize: 10.sp,
+                                                fontSize: 12.sp,
                                                 fontFamily: fontMedium,
                                                 textColor: Colors.black),
                                           ],

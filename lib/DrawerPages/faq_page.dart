@@ -89,9 +89,11 @@ class _FaqPageState extends State<FaqPage> {
         backgroundColor: MyColorName.colorBg1,
         title: Text(
           'FAQs',
-          style: TextStyle(fontSize: 20,
-            fontFamily:  AppTheme.fontFamily,
-            color: MyColorName.secondary,),
+          style: TextStyle(
+            fontSize: 20,
+            fontFamily: AppTheme.fontFamily,
+            color: MyColorName.secondary,
+          ),
         ),
         centerTitle: true,
       ),
@@ -105,10 +107,11 @@ class _FaqPageState extends State<FaqPage> {
                 padding: EdgeInsets.symmetric(horizontal: 20, vertical: 16),
                 child: Text(
                   getTranslated(context, Strings.READ_FAQS)!,
-                  style: theme.textTheme.headlineSmall!
-                      .copyWith(fontSize: 20,
-                    fontFamily:  AppTheme.fontFamily,
-                    color: MyColorName.secondary,),
+                  style: theme.textTheme.headlineSmall!.copyWith(
+                    fontSize: 20,
+                    fontFamily: AppTheme.fontFamily,
+                    color: MyColorName.secondary,
+                  ),
                 ),
               ),
               SizedBox(height: 20),
@@ -150,7 +153,7 @@ class _FaqPageState extends State<FaqPage> {
                       ),
                     )
                   : Center(
-                      child: CircularProgressIndicator(),
+                      child: CircularProgressIndicator(color: Colors.black),
                     )
             ],
           ),
