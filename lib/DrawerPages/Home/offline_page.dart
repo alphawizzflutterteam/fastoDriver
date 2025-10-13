@@ -205,10 +205,10 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
 
   getBookingInfo(tempRefer) async {
     try {
-      if (bookModel != null && getDifference()) {
-        UI.setSnackBar("you have a booking in an hour", context);
-        return;
-      }
+      // if (bookModel != null && getDifference()) {
+      //   UI.setSnackBar("you have a booking in an hour", context);
+      //   return;
+      // }
       setState(() {
         saveStatus = false;
         bookModel = null;
@@ -218,7 +218,8 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
       }
       Map params = {
         "booking_id": tempRefer.toString(),
-        "driver_id": curUserId.toString(),
+        // "driver_id": curUserId.toString(),
+        // "driver_id": '',
       };
       print("GET BOOKING ====== $params");
       Map response = await apiBase.postAPICall(
@@ -233,6 +234,7 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
         if (mounted && bookModel == null)
           setState(() {
             model = MyRideModel.fromJson(v);
+            print("adddddddddddddddddddd ${model}");
           });
         if (widget.bookingId != '') {
           bookingStatus(model!.id.toString(), "1");
@@ -267,7 +269,8 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
       });
       //return;
       Map params = {
-        "user_id": curUserId,
+        // "user_id": curUserId,
+        // "user_id": '',
       };
       Map response = await apiBase.postAPICall(
           Uri.parse(baseUrl1 + "payment/get_booking_details"), params);
@@ -356,7 +359,8 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
         saveStatus = false;
       });
       Map params = {
-        "driver_id": curUserId,
+        // "driver_id": '',
+        // "driver_id": curUserId,
         "type": "today",
       };
       print("TODAY RIDE PARAM ==== $params");
@@ -890,17 +894,21 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
       key: _drawerKey,
       backgroundColor: Colors.white,
       appBar: AppBar(
-        iconTheme: IconThemeData(color: MyColorName.secondary,),
+        iconTheme: IconThemeData(
+          color: MyColorName.secondary,
+        ),
         centerTitle: false,
         elevation: 4,
         shadowColor: Colors.black.withOpacity(0.2),
         backgroundColor: MyColorName.colorBg1,
         title: Text(
           getTranslated(context, "TAKE_RIDE")!,
-          style: TextStyle(fontSize: 18,
+          style: TextStyle(
+            fontSize: 18,
             fontFamily: AppTheme.fontFamily,
             fontWeight: FontWeight.w600,
-            color: MyColorName.secondary,),
+            color: MyColorName.secondary,
+          ),
         ),
         actions: [
           UI.commonIconButton(
@@ -1362,46 +1370,46 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
                                             )
                                           : SizedBox(),
                                       boxHeight(5),
-                                      double.parse(
-                                                  model!.gstAmount.toString()) >
-                                              0
-                                          ? Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                text(
-                                                    "Last ride cancel charge : ",
-                                                    fontSize: 10.sp,
-                                                    fontFamily: fontMedium,
-                                                    textColor: Colors.black),
-                                                text(
-                                                    "₹" +
-                                                        model!.cancelChargeNew
-                                                            .toString(),
-                                                    fontSize: 10.sp,
-                                                    fontFamily: fontMedium,
-                                                    textColor: Colors.black),
-                                              ],
-                                            )
-                                          : SizedBox(),
-                                      Row(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.spaceBetween,
-                                        children: [
-                                          text("Service Charge : ",
-                                              fontSize: 10.sp,
-                                              fontFamily: fontMedium,
-                                              textColor: Colors.black),
-                                          text(
-                                              "₹" +
-                                                  model!.service_charge
-                                                      .toString(),
-                                              fontSize: 10.sp,
-                                              fontFamily: fontMedium,
-                                              textColor: Colors.black),
-                                        ],
-                                      ),
+                                      // double.parse(
+                                      //             model!.gstAmount.toString()) >
+                                      //         0
+                                      //     ? Row(
+                                      //         mainAxisAlignment:
+                                      //             MainAxisAlignment
+                                      //                 .spaceBetween,
+                                      //         children: [
+                                      //           text(
+                                      //               "Last ride cancel charge : ",
+                                      //               fontSize: 10.sp,
+                                      //               fontFamily: fontMedium,
+                                      //               textColor: Colors.black),
+                                      //           text(
+                                      //               "₹" +
+                                      //                   model!.cancelChargeNew
+                                      //                       .toString(),
+                                      //               fontSize: 10.sp,
+                                      //               fontFamily: fontMedium,
+                                      //               textColor: Colors.black),
+                                      //         ],
+                                      //       )
+                                      //     : SizedBox(),
+                                      // Row(
+                                      //   mainAxisAlignment:
+                                      //       MainAxisAlignment.spaceBetween,
+                                      //   children: [
+                                      //     text("Service Charge : ",
+                                      //         fontSize: 10.sp,
+                                      //         fontFamily: fontMedium,
+                                      //         textColor: Colors.black),
+                                      //     text(
+                                      //         "₹" +
+                                      //             model!.service_charge
+                                      //                 .toString(),
+                                      //         fontSize: 10.sp,
+                                      //         fontFamily: fontMedium,
+                                      //         textColor: Colors.black),
+                                      //   ],
+                                      // ),
 
                                       /*Row(
                               mainAxisAlignment:
@@ -1431,244 +1439,244 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
                                     textColor: Colors.black),
                               ],
                             ),*/
-                                      Container(
-                                        child: Column(
-                                          children: [
-                                            double.parse(model!.gstAmount
-                                                        .toString()) >
-                                                    0
-                                                ? Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      text("Sub Total : ",
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontMedium,
-                                                          textColor:
-                                                              Colors.black),
-                                                      text(
-                                                          "₹" +
-                                                              (model?.ratePerKm ??
-                                                                  ''),
-                                                          // (double.parse(
-                                                          //             model!
-                                                          //                 .baseFare
-                                                          //                 .toString()) +
-                                                          //         double.parse(
-                                                          //             model!
-                                                          //                 .promoDiscount
-                                                          //                 .toString()) -
-                                                          //         double.parse(model!
-                                                          //             .gstAmount
-                                                          //             .toString()) )
-                                                          //     .toStringAsFixed(
-                                                          //         2),
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontMedium,
-                                                          textColor:
-                                                              Colors.black),
-                                                    ],
-                                                  )
-                                                : SizedBox(),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                text("Coins Used : ",
-                                                    fontSize: 10.sp,
-                                                    fontFamily: fontMedium,
-                                                    textColor: Colors.black),
-                                                text(
-                                                    "-₹" +
-                                                        model!.pointUsed
-                                                            .toString(),
-                                                    fontSize: 10.sp,
-                                                    fontFamily: fontMedium,
-                                                    textColor: Colors.black),
-                                              ],
-                                            ),
-                                            model!.baseFare != null &&
-                                                    model!.baseFare!
-                                                        is double &&
-                                                    double.parse(model!.baseFare
-                                                            .toString()) >
-                                                        0
-                                                ? Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      text("Base fare : ",
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontRegular,
-                                                          textColor:
-                                                              Colors.black),
-                                                      text(
-                                                          "₹" +
-                                                              double.parse(model!
-                                                                      .baseFare
-                                                                      .toString())
-                                                                  .toStringAsFixed(
-                                                                      2),
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontRegular,
-                                                          textColor:
-                                                              Colors.black),
-                                                    ],
-                                                  )
-                                                : SizedBox(),
-                                            model!.ratePerKm != null &&
-                                                    model!.ratePerKm!
-                                                        is double &&
-                                                    double.parse(model!.km
-                                                            .toString()) >=
-                                                        2 &&
-                                                    double.parse(model!
-                                                            .ratePerKm
-                                                            .toString()
-                                                            .replaceAll(
-                                                                ",", "")) >
-                                                        0
-                                                ? Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      text(
-                                                          "${model!.km.toString()} Kilometers : ",
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontRegular,
-                                                          textColor:
-                                                              Colors.black),
-                                                      text(
-                                                          "₹" +
-                                                              model!.ratePerKm
-                                                                  .toString()
-                                                                  .replaceAll(
-                                                                      ",", ""),
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontRegular,
-                                                          textColor:
-                                                              Colors.black),
-                                                    ],
-                                                  )
-                                                : SizedBox(),
-                                            model!.timeAmount != null &&
-                                                    model!.timeAmount!
-                                                        is double &&
-                                                    double.parse(model!
-                                                            .timeAmount
-                                                            .toString()) >
-                                                        0
-                                                ? Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      text(
-                                                          "${model!.totalTime.toString()} Minutes : ",
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontRegular,
-                                                          textColor:
-                                                              Colors.black),
-                                                      text(
-                                                          "₹" +
-                                                              model!.timeAmount
-                                                                  .toString(),
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontRegular,
-                                                          textColor:
-                                                              Colors.black),
-                                                    ],
-                                                  )
-                                                : SizedBox(),
-                                            double.parse(model!.surgeAmount
-                                                        .toString()) >
-                                                    0
-                                                ? Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      text("Surge Amount : ",
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontMedium,
-                                                          textColor:
-                                                              Colors.black),
-                                                      text(
-                                                          "₹" +
-                                                              model!.surgeAmount
-                                                                  .toString(),
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontMedium,
-                                                          textColor:
-                                                              Colors.black),
-                                                    ],
-                                                  )
-                                                : SizedBox(),
-                                            double.parse(model!.promoDiscount
-                                                        .toString()) >
-                                                    0
-                                                ? Row(
-                                                    mainAxisAlignment:
-                                                        MainAxisAlignment
-                                                            .spaceBetween,
-                                                    children: [
-                                                      text("Promo Discount : ",
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontMedium,
-                                                          textColor:
-                                                              Colors.black),
-                                                      text(
-                                                          "-₹" +
-                                                              (double.parse(model!
-                                                                      .promoDiscount
-                                                                      .toString()))
-                                                                  .toStringAsFixed(
-                                                                      2),
-                                                          fontSize: 10.sp,
-                                                          fontFamily:
-                                                              fontMedium,
-                                                          textColor:
-                                                              Colors.black),
-                                                    ],
-                                                  )
-                                                : SizedBox(),
-                                            Divider(),
-                                            Row(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment
-                                                      .spaceBetween,
-                                              children: [
-                                                text("Total : ",
-                                                    fontSize: 10.sp,
-                                                    fontFamily: fontMedium,
-                                                    textColor: Colors.black),
-                                                text(
-                                                    "₹" +
-                                                        "${model!.finalTotal}",
-                                                    fontSize: 10.sp,
-                                                    fontFamily: fontMedium,
-                                                    textColor: Colors.black),
-                                              ],
-                                            ),
-                                            boxHeight(5),
-                                          ],
-                                        ),
-                                      ),
+                                      // Container(
+                                      //   child: Column(
+                                      //     children: [
+                                      //       double.parse(model!.gstAmount
+                                      //                   .toString()) >
+                                      //               0
+                                      //           ? Row(
+                                      //               mainAxisAlignment:
+                                      //                   MainAxisAlignment
+                                      //                       .spaceBetween,
+                                      //               children: [
+                                      //                 text("Sub Total : ",
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontMedium,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //                 text(
+                                      //                     "₹" +
+                                      //                         (model?.ratePerKm ??
+                                      //                             ''),
+                                      //                     // (double.parse(
+                                      //                     //             model!
+                                      //                     //                 .baseFare
+                                      //                     //                 .toString()) +
+                                      //                     //         double.parse(
+                                      //                     //             model!
+                                      //                     //                 .promoDiscount
+                                      //                     //                 .toString()) -
+                                      //                     //         double.parse(model!
+                                      //                     //             .gstAmount
+                                      //                     //             .toString()) )
+                                      //                     //     .toStringAsFixed(
+                                      //                     //         2),
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontMedium,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //               ],
+                                      //             )
+                                      //           : SizedBox(),
+                                      //       // Row(
+                                      //       //   mainAxisAlignment:
+                                      //       //       MainAxisAlignment
+                                      //       //           .spaceBetween,
+                                      //       //   children: [
+                                      //       //     text("Coins Used : ",
+                                      //       //         fontSize: 10.sp,
+                                      //       //         fontFamily: fontMedium,
+                                      //       //         textColor: Colors.black),
+                                      //       //     text(
+                                      //       //         "-₹" +
+                                      //       //             model!.pointUsed
+                                      //       //                 .toString(),
+                                      //       //         fontSize: 10.sp,
+                                      //       //         fontFamily: fontMedium,
+                                      //       //         textColor: Colors.black),
+                                      //       //   ],
+                                      //       // ),
+                                      //       model!.baseFare != null &&
+                                      //               model!.baseFare!
+                                      //                   is double &&
+                                      //               double.parse(model!.baseFare
+                                      //                       .toString()) >
+                                      //                   0
+                                      //           ? Row(
+                                      //               mainAxisAlignment:
+                                      //                   MainAxisAlignment
+                                      //                       .spaceBetween,
+                                      //               children: [
+                                      //                 text("Base fare : ",
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontRegular,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //                 text(
+                                      //                     "₹" +
+                                      //                         double.parse(model!
+                                      //                                 .baseFare
+                                      //                                 .toString())
+                                      //                             .toStringAsFixed(
+                                      //                                 2),
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontRegular,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //               ],
+                                      //             )
+                                      //           : SizedBox(),
+                                      //       model!.ratePerKm != null &&
+                                      //               model!.ratePerKm!
+                                      //                   is double &&
+                                      //               double.parse(model!.km
+                                      //                       .toString()) >=
+                                      //                   2 &&
+                                      //               double.parse(model!
+                                      //                       .ratePerKm
+                                      //                       .toString()
+                                      //                       .replaceAll(
+                                      //                           ",", "")) >
+                                      //                   0
+                                      //           ? Row(
+                                      //               mainAxisAlignment:
+                                      //                   MainAxisAlignment
+                                      //                       .spaceBetween,
+                                      //               children: [
+                                      //                 text(
+                                      //                     "${model!.km.toString()} Kilometers : ",
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontRegular,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //                 text(
+                                      //                     "₹" +
+                                      //                         model!.ratePerKm
+                                      //                             .toString()
+                                      //                             .replaceAll(
+                                      //                                 ",", ""),
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontRegular,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //               ],
+                                      //             )
+                                      //           : SizedBox(),
+                                      //       model!.timeAmount != null &&
+                                      //               model!.timeAmount!
+                                      //                   is double &&
+                                      //               double.parse(model!
+                                      //                       .timeAmount
+                                      //                       .toString()) >
+                                      //                   0
+                                      //           ? Row(
+                                      //               mainAxisAlignment:
+                                      //                   MainAxisAlignment
+                                      //                       .spaceBetween,
+                                      //               children: [
+                                      //                 text(
+                                      //                     "${model!.totalTime.toString()} Minutes : ",
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontRegular,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //                 text(
+                                      //                     "₹" +
+                                      //                         model!.timeAmount
+                                      //                             .toString(),
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontRegular,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //               ],
+                                      //             )
+                                      //           : SizedBox(),
+                                      //       double.parse(model!.surgeAmount
+                                      //                   .toString()) >
+                                      //               0
+                                      //           ? Row(
+                                      //               mainAxisAlignment:
+                                      //                   MainAxisAlignment
+                                      //                       .spaceBetween,
+                                      //               children: [
+                                      //                 text("Surge Amount : ",
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontMedium,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //                 text(
+                                      //                     "₹" +
+                                      //                         model!.surgeAmount
+                                      //                             .toString(),
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontMedium,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //               ],
+                                      //             )
+                                      //           : SizedBox(),
+                                      //       double.parse(model!.promoDiscount
+                                      //                   .toString()) >
+                                      //               0
+                                      //           ? Row(
+                                      //               mainAxisAlignment:
+                                      //                   MainAxisAlignment
+                                      //                       .spaceBetween,
+                                      //               children: [
+                                      //                 text("Promo Discount : ",
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontMedium,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //                 text(
+                                      //                     "-₹" +
+                                      //                         (double.parse(model!
+                                      //                                 .promoDiscount
+                                      //                                 .toString()))
+                                      //                             .toStringAsFixed(
+                                      //                                 2),
+                                      //                     fontSize: 10.sp,
+                                      //                     fontFamily:
+                                      //                         fontMedium,
+                                      //                     textColor:
+                                      //                         Colors.black),
+                                      //               ],
+                                      //             )
+                                      //           : SizedBox(),
+                                      //       Divider(),
+                                      //       Row(
+                                      //         mainAxisAlignment:
+                                      //             MainAxisAlignment
+                                      //                 .spaceBetween,
+                                      //         children: [
+                                      //           text("Total : ",
+                                      //               fontSize: 10.sp,
+                                      //               fontFamily: fontMedium,
+                                      //               textColor: Colors.black),
+                                      //           text(
+                                      //               "₹" +
+                                      //                   "${model!.finalTotal}",
+                                      //               fontSize: 10.sp,
+                                      //               fontFamily: fontMedium,
+                                      //               textColor: Colors.black),
+                                      //         ],
+                                      //       ),
+                                      //       boxHeight(5),
+                                      //     ],
+                                      //   ),
+                                      // ),
                                       boxHeight(5),
                                       !acceptStatus
                                           ? Row(
@@ -1732,7 +1740,7 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
                                                     height: 5.h,
                                                     decoration: boxDecoration(
                                                         radius: 5,
-                                                        bgColor: Colors.grey),
+                                                        bgColor: Colors.red),
                                                     child: Center(
                                                         child: text("Reject",
                                                             fontFamily:
@@ -1746,8 +1754,8 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
                                               ],
                                             )
                                           : Center(
-                                              child:
-                                                  CircularProgressIndicator(),
+                                              child: CircularProgressIndicator(
+                                                  color: Colors.black),
                                             ),
                                     ],
                                   ),
@@ -1762,7 +1770,7 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
         ),
       ),
       bottomNavigationBar: Container(
-        height: 100,
+        height: 110,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -1808,13 +1816,15 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
                                 ? AppTheme.primaryColor
                                 : Colors.white,
                             padding: EdgeInsets.all(getWidth(5)),
-                            child: Text(e,
-                                style: TextStyle(
-                                  color: i != current
-                                      ? AppTheme.primaryColor
-                                      : Colors.white,
-                                  fontSize: 16.0,
-                                )),
+                            child: Text(
+                              e,
+                              style: TextStyle(
+                                color: i != current
+                                    ? AppTheme.primaryColor
+                                    : Colors.white,
+                                fontSize: 16.0,
+                              ),
+                            ),
                           ),
                           e != "Offline"
                               ? Container(height: 10, child: VerticalDivider())
@@ -1826,6 +1836,8 @@ class _OfflinePageState extends State<OfflinePage> with WidgetsBindingObserver {
                 ),
               ),
             ),
+            text("You need to add minimum \u{20B9}500 to get booking request.",
+                fontSize: 10.sp, fontFamily: fontMedium, textColor: Colors.red),
             boxHeight(50),
             // Material(
             //     color: Theme.of(context).scaffoldBackgroundColor,

@@ -580,28 +580,28 @@ class _MyRidesPageState extends State<MyRidesPage> {
                                             child: Row(
                                               children: [
                                                 ///image
-                                                ClipRRect(
-                                                  borderRadius:
-                                                      BorderRadius.circular(8),
-                                                  child: Container(
-                                                    height: getWidth(80),
-                                                    width: getWidth(80),
-                                                    decoration: boxDecoration(
-                                                        radius: 10,
-                                                        color: Colors.grey),
-                                                    child: Image.network(
-                                                      imagePath +
-                                                          rideList[index]
-                                                              .userImage
-                                                              .toString(),
-                                                      height: getWidth(80),
-                                                      width: getWidth(80),
-                                                    ),
-                                                  ),
-                                                ),
-                                                SizedBox(
-                                                  width: 5,
-                                                ),
+                                                // ClipRRect(
+                                                //   borderRadius:
+                                                //       BorderRadius.circular(8),
+                                                //   child: Container(
+                                                //     height: getWidth(80),
+                                                //     width: getWidth(80),
+                                                //     decoration: boxDecoration(
+                                                //         radius: 10,
+                                                //         color: Colors.grey),
+                                                //     child: Image.network(
+                                                //       imagePath +
+                                                //           rideList[index]
+                                                //               .userImage
+                                                //               .toString(),
+                                                //       height: getWidth(80),
+                                                //       width: getWidth(80),
+                                                //     ),
+                                                //   ),
+                                                // ),
+                                                // SizedBox(
+                                                //   width: 5,
+                                                // ),
                                                 Expanded(
                                                   child: Column(
                                                     mainAxisAlignment:
@@ -730,6 +730,19 @@ class _MyRidesPageState extends State<MyRidesPage> {
                                                                         FontWeight
                                                                             .bold),
                                                           ),
+                                                          Text(
+                                                            "${rideList[index].distance ?? ''} Kms",
+                                                            style: Theme.of(
+                                                                    context)
+                                                                .textTheme
+                                                                .headlineSmall!
+                                                                .copyWith(
+                                                                    fontSize:
+                                                                        14,
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .w500),
+                                                          ),
                                                           // rideList[index].orderType ==
                                                           //             null ||
                                                           //         rideList[index]
@@ -810,222 +823,222 @@ class _MyRidesPageState extends State<MyRidesPage> {
                                               ],
                                             ),
                                           ),
-                                          Padding(
-                                            padding: const EdgeInsets.symmetric(
-                                                horizontal: 12.0),
-                                            child: Column(
-                                              children: [
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment
-                                                          .spaceBetween,
-                                                  children: [
-                                                    Text(
-                                                      rideList[index]
-                                                              .taxiType ??
-                                                          '',
-                                                      style: Theme.of(context)
-                                                          .textTheme
-                                                          .headlineSmall!
-                                                          .copyWith(
-                                                              fontSize: 14,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500),
-                                                    ),
-                                                    // Text("•"),
-                                                    // Text(
-                                                    //   "${rideList[index].seatingCapacity ?? ''} Seats",
-                                                    //   style: Theme.of(context)
-                                                    //       .textTheme
-                                                    //       .bodyText2!
-                                                    //       .copyWith(
-                                                    //       fontSize: 14,
-                                                    //       fontWeight:
-                                                    //       FontWeight.w500),
-                                                    // ),
-                                                    // Text("•"),
-                                                    Text(
-                                                      "${rideList[index].distance ?? ''} Kms",
-                                                      style: Theme.of(context)
-                                                          .textTheme
-                                                          .headlineSmall!
-                                                          .copyWith(
-                                                              fontSize: 14,
-                                                              fontWeight:
-                                                                  FontWeight
-                                                                      .w500),
-                                                    ),
-                                                  ],
-                                                ),
-                                                SizedBox(height: 4),
-                                                Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.start,
-                                                  children: [
-                                                    Expanded(
-                                                      flex: 1,
-                                                      child: Column(
-                                                          crossAxisAlignment:
-                                                              CrossAxisAlignment
-                                                                  .start,
-                                                          children: [
-                                                            // Text("Fuel Type",
-                                                            //     style: Theme.of(context)
-                                                            //         .textTheme
-                                                            //         .bodyText2!
-                                                            //         .copyWith(
-                                                            //         fontSize: 12,
-                                                            //         fontWeight:
-                                                            //         FontWeight.bold)),
-
-                                                            rideList[index].extraKmPrice ==
-                                                                        null ||
-                                                                    rideList[index]
-                                                                            .extraKmPrice ==
-                                                                        '' ||
-                                                                    rideList[index]
-                                                                            .extraKmPrice ==
-                                                                        '0.00'
-                                                                ? SizedBox()
-                                                                : Text(
-                                                                    "Extra km charges",
-                                                                    style: Theme.of(
-                                                                            context)
-                                                                        .textTheme
-                                                                        .headlineSmall!
-                                                                        .copyWith(
-                                                                            fontSize:
-                                                                                12,
-                                                                            fontWeight:
-                                                                                FontWeight.bold)),
-                                                            rideList[index]
-                                                                        .luggageCarrier ==
-                                                                    'yes'
-                                                                ? Text(
-                                                                    "Luggage Carrier",
-                                                                    style: Theme.of(
-                                                                            context)
-                                                                        .textTheme
-                                                                        .headlineSmall!
-                                                                        .copyWith(
-                                                                            fontSize:
-                                                                                12,
-                                                                            fontWeight:
-                                                                                FontWeight.bold))
-                                                                : const SizedBox()
-                                                            // Text("Insurance Expiry",
-                                                            //     style: Theme.of(context)
-                                                            //         .textTheme
-                                                            //         .bodyText2!
-                                                            //         .copyWith(
-                                                            //         fontSize: 12,
-                                                            //         fontWeight:
-                                                            //         FontWeight.bold)),
-                                                            // Text("Pollution Expiry",
-                                                            //     style: Theme.of(context)
-                                                            //         .textTheme
-                                                            //         .bodyText2!
-                                                            //         .copyWith(
-                                                            //         fontSize: 12,
-                                                            //         fontWeight:
-                                                            //         FontWeight.bold)),
-                                                          ]),
-                                                    ),
-                                                    // const SizedBox(width: 40),
-                                                    Expanded(
-                                                      flex: 2,
-                                                      child: Column(
-                                                        crossAxisAlignment:
-                                                            CrossAxisAlignment
-                                                                .start,
-                                                        children: [
-                                                          // Text(
-                                                          //   ":  ${rideList[index].fuelType}",
-                                                          //   style: Theme.of(context)
-                                                          //       .textTheme
-                                                          //       .bodyText2!
-                                                          //       .copyWith(
-                                                          //       fontSize: 12,
-                                                          //       fontWeight:
-                                                          //       FontWeight.w500),
-                                                          // ),
-                                                          rideList[index].extraKmPrice ==
-                                                                      null ||
-                                                                  rideList[index]
-                                                                          .extraKmPrice ==
-                                                                      '' ||
-                                                                  rideList[index]
-                                                                          .extraKmPrice ==
-                                                                      '0.00'
-                                                              ? SizedBox()
-                                                              : Text(
-                                                                  ":  ₹${rideList[index].extraKmPrice}/Km after ${rideList[index].distance} Kms",
-                                                                  style: Theme.of(
-                                                                          context)
-                                                                      .textTheme
-                                                                      .headlineSmall!
-                                                                      .copyWith(
-                                                                          fontSize:
-                                                                              12,
-                                                                          fontWeight:
-                                                                              FontWeight.w500),
-                                                                ),
-                                                          rideList[index]
-                                                                      .luggageCarrier ==
-                                                                  'yes'
-                                                              ? Text(
-                                                                  ":  ${rideList[index].luggageCarrier ?? ''}",
-                                                                  style: Theme.of(
-                                                                          context)
-                                                                      .textTheme
-                                                                      .headlineSmall!
-                                                                      .copyWith(
-                                                                          fontSize:
-                                                                              12,
-                                                                          fontWeight:
-                                                                              FontWeight.w500),
-                                                                )
-                                                              : const SizedBox()
-                                                          // Text(
-                                                          //   rideList[index].vehicle_no.toString(),
-                                                          //   style: Theme.of(context)
-                                                          //       .textTheme
-                                                          //       .bodyText2!
-                                                          //       .copyWith(
-                                                          //       fontSize: 14,
-                                                          //       fontWeight:
-                                                          //       FontWeight.w500),
-                                                          // ),
-                                                          // Text(
-                                                          //   rideList[index].insurance_expiry.toString(),
-                                                          //   style: Theme.of(context)
-                                                          //       .textTheme
-                                                          //       .bodyText2!
-                                                          //       .copyWith(
-                                                          //       fontSize: 12,
-                                                          //       fontWeight:
-                                                          //       FontWeight.w500),
-                                                          // ),
-                                                          // Text(
-                                                          //   rideList[index].pollution_expiry.toString(),
-                                                          //   style: Theme.of(context)
-                                                          //       .textTheme
-                                                          //       .bodyText2!
-                                                          //       .copyWith(
-                                                          //       fontSize: 12,
-                                                          //       fontWeight:
-                                                          //       FontWeight.w500),
-                                                          // ),
-                                                        ],
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                                SizedBox(height: 8),
-                                              ],
-                                            ),
-                                          ),
+                                          // Padding(
+                                          //   padding: const EdgeInsets.symmetric(
+                                          //       horizontal: 12.0),
+                                          //   child: Column(
+                                          //     children: [
+                                          //       Row(
+                                          //         mainAxisAlignment:
+                                          //             MainAxisAlignment
+                                          //                 .spaceBetween,
+                                          //         children: [
+                                          //           Text(
+                                          //             rideList[index]
+                                          //                     .taxiType ??
+                                          //                 '',
+                                          //             style: Theme.of(context)
+                                          //                 .textTheme
+                                          //                 .headlineSmall!
+                                          //                 .copyWith(
+                                          //                     fontSize: 14,
+                                          //                     fontWeight:
+                                          //                         FontWeight
+                                          //                             .w500),
+                                          //           ),
+                                          //           // Text("•"),
+                                          //           // Text(
+                                          //           //   "${rideList[index].seatingCapacity ?? ''} Seats",
+                                          //           //   style: Theme.of(context)
+                                          //           //       .textTheme
+                                          //           //       .bodyText2!
+                                          //           //       .copyWith(
+                                          //           //       fontSize: 14,
+                                          //           //       fontWeight:
+                                          //           //       FontWeight.w500),
+                                          //           // ),
+                                          //           // Text("•"),
+                                          //           Text(
+                                          //             "${rideList[index].distance ?? ''} Kms",
+                                          //             style: Theme.of(context)
+                                          //                 .textTheme
+                                          //                 .headlineSmall!
+                                          //                 .copyWith(
+                                          //                     fontSize: 14,
+                                          //                     fontWeight:
+                                          //                         FontWeight
+                                          //                             .w500),
+                                          //           ),
+                                          //         ],
+                                          //       ),
+                                          //       SizedBox(height: 4),
+                                          //       Row(
+                                          //         mainAxisAlignment:
+                                          //             MainAxisAlignment.start,
+                                          //         children: [
+                                          //           Expanded(
+                                          //             flex: 1,
+                                          //             child: Column(
+                                          //                 crossAxisAlignment:
+                                          //                     CrossAxisAlignment
+                                          //                         .start,
+                                          //                 children: [
+                                          //                   // Text("Fuel Type",
+                                          //                   //     style: Theme.of(context)
+                                          //                   //         .textTheme
+                                          //                   //         .bodyText2!
+                                          //                   //         .copyWith(
+                                          //                   //         fontSize: 12,
+                                          //                   //         fontWeight:
+                                          //                   //         FontWeight.bold)),
+                                          //
+                                          //                   rideList[index].extraKmPrice ==
+                                          //                               null ||
+                                          //                           rideList[index]
+                                          //                                   .extraKmPrice ==
+                                          //                               '' ||
+                                          //                           rideList[index]
+                                          //                                   .extraKmPrice ==
+                                          //                               '0.00'
+                                          //                       ? SizedBox()
+                                          //                       : Text(
+                                          //                           "Extra km charges",
+                                          //                           style: Theme.of(
+                                          //                                   context)
+                                          //                               .textTheme
+                                          //                               .headlineSmall!
+                                          //                               .copyWith(
+                                          //                                   fontSize:
+                                          //                                       12,
+                                          //                                   fontWeight:
+                                          //                                       FontWeight.bold)),
+                                          //                   rideList[index]
+                                          //                               .luggageCarrier ==
+                                          //                           'yes'
+                                          //                       ? Text(
+                                          //                           "Luggage Carrier",
+                                          //                           style: Theme.of(
+                                          //                                   context)
+                                          //                               .textTheme
+                                          //                               .headlineSmall!
+                                          //                               .copyWith(
+                                          //                                   fontSize:
+                                          //                                       12,
+                                          //                                   fontWeight:
+                                          //                                       FontWeight.bold))
+                                          //                       : const SizedBox()
+                                          //                   // Text("Insurance Expiry",
+                                          //                   //     style: Theme.of(context)
+                                          //                   //         .textTheme
+                                          //                   //         .bodyText2!
+                                          //                   //         .copyWith(
+                                          //                   //         fontSize: 12,
+                                          //                   //         fontWeight:
+                                          //                   //         FontWeight.bold)),
+                                          //                   // Text("Pollution Expiry",
+                                          //                   //     style: Theme.of(context)
+                                          //                   //         .textTheme
+                                          //                   //         .bodyText2!
+                                          //                   //         .copyWith(
+                                          //                   //         fontSize: 12,
+                                          //                   //         fontWeight:
+                                          //                   //         FontWeight.bold)),
+                                          //                 ]),
+                                          //           ),
+                                          //           // const SizedBox(width: 40),
+                                          //           Expanded(
+                                          //             flex: 2,
+                                          //             child: Column(
+                                          //               crossAxisAlignment:
+                                          //                   CrossAxisAlignment
+                                          //                       .start,
+                                          //               children: [
+                                          //                 // Text(
+                                          //                 //   ":  ${rideList[index].fuelType}",
+                                          //                 //   style: Theme.of(context)
+                                          //                 //       .textTheme
+                                          //                 //       .bodyText2!
+                                          //                 //       .copyWith(
+                                          //                 //       fontSize: 12,
+                                          //                 //       fontWeight:
+                                          //                 //       FontWeight.w500),
+                                          //                 // ),
+                                          //                 rideList[index].extraKmPrice ==
+                                          //                             null ||
+                                          //                         rideList[index]
+                                          //                                 .extraKmPrice ==
+                                          //                             '' ||
+                                          //                         rideList[index]
+                                          //                                 .extraKmPrice ==
+                                          //                             '0.00'
+                                          //                     ? SizedBox()
+                                          //                     : Text(
+                                          //                         ":  ₹${rideList[index].extraKmPrice}/Km after ${rideList[index].distance} Kms",
+                                          //                         style: Theme.of(
+                                          //                                 context)
+                                          //                             .textTheme
+                                          //                             .headlineSmall!
+                                          //                             .copyWith(
+                                          //                                 fontSize:
+                                          //                                     12,
+                                          //                                 fontWeight:
+                                          //                                     FontWeight.w500),
+                                          //                       ),
+                                          //                 rideList[index]
+                                          //                             .luggageCarrier ==
+                                          //                         'yes'
+                                          //                     ? Text(
+                                          //                         ":  ${rideList[index].luggageCarrier ?? ''}",
+                                          //                         style: Theme.of(
+                                          //                                 context)
+                                          //                             .textTheme
+                                          //                             .headlineSmall!
+                                          //                             .copyWith(
+                                          //                                 fontSize:
+                                          //                                     12,
+                                          //                                 fontWeight:
+                                          //                                     FontWeight.w500),
+                                          //                       )
+                                          //                     : const SizedBox()
+                                          //                 // Text(
+                                          //                 //   rideList[index].vehicle_no.toString(),
+                                          //                 //   style: Theme.of(context)
+                                          //                 //       .textTheme
+                                          //                 //       .bodyText2!
+                                          //                 //       .copyWith(
+                                          //                 //       fontSize: 14,
+                                          //                 //       fontWeight:
+                                          //                 //       FontWeight.w500),
+                                          //                 // ),
+                                          //                 // Text(
+                                          //                 //   rideList[index].insurance_expiry.toString(),
+                                          //                 //   style: Theme.of(context)
+                                          //                 //       .textTheme
+                                          //                 //       .bodyText2!
+                                          //                 //       .copyWith(
+                                          //                 //       fontSize: 12,
+                                          //                 //       fontWeight:
+                                          //                 //       FontWeight.w500),
+                                          //                 // ),
+                                          //                 // Text(
+                                          //                 //   rideList[index].pollution_expiry.toString(),
+                                          //                 //   style: Theme.of(context)
+                                          //                 //       .textTheme
+                                          //                 //       .bodyText2!
+                                          //                 //       .copyWith(
+                                          //                 //       fontSize: 12,
+                                          //                 //       fontWeight:
+                                          //                 //       FontWeight.w500),
+                                          //                 // ),
+                                          //               ],
+                                          //             ),
+                                          //           ),
+                                          //         ],
+                                          //       ),
+                                          //       SizedBox(height: 8),
+                                          //     ],
+                                          //   ),
+                                          // ),
                                           Divider(
                                             height: 0,
                                             color: Colors.grey.shade300,

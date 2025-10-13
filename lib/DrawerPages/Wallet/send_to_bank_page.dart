@@ -284,7 +284,8 @@ class _SendToBankPageState extends State<SendToBankPage> {
                             ),
                           )
                         : Center(
-                            child: CircularProgressIndicator(),
+                            child:
+                                CircularProgressIndicator(color: Colors.black),
                           ),
                     // Container(
                     //   color: theme.cardColor,
@@ -340,7 +341,7 @@ class _SendToBankPageState extends State<SendToBankPage> {
             //           },
             //         )
             //       : Center(
-            //           child: CircularProgressIndicator(),
+            //           child: CircularProgressIndicator(color: Colors.black),
             //         ),
             // ),
           ],

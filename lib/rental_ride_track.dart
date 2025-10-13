@@ -651,7 +651,7 @@ class _RentalRideInfoPageState extends State<RentalRideInfoPage> {
                                   isCentered: true,
                                   textColor: Colors.white)),
                         )
-                      : CircularProgressIndicator(),
+                      : CircularProgressIndicator(color: Colors.black),
                 ),
                 boxWidth(10),
                 InkWell(
@@ -676,7 +676,7 @@ class _RentalRideInfoPageState extends State<RentalRideInfoPage> {
                                   isCentered: true,
                                   textColor: Colors.white)),
                         )
-                      : CircularProgressIndicator(),
+                      : CircularProgressIndicator(color: Colors.black),
                 ),
               ],
             ),
@@ -828,7 +828,7 @@ class _RentalRideInfoPageState extends State<RentalRideInfoPage> {
                                           //             ],
                                           //           )),
                                           //     )
-                                          //   // :CircularProgressIndicator(),
+                                          //   // :CircularProgressIndicator(color: Colors.black),
                                           // ):SizedBox():
                                           InkWell(
                                             onTap: () {
@@ -896,7 +896,8 @@ class _RentalRideInfoPageState extends State<RentalRideInfoPage> {
                                                       ],
                                                     )),
                                                   )
-                                                : CircularProgressIndicator(),
+                                                : CircularProgressIndicator(
+                                                    color: Colors.black),
                                           ),
                                         ],
                                       )
@@ -1316,7 +1317,7 @@ class _RentalRideInfoPageState extends State<RentalRideInfoPage> {
                       ),
                     )
               : Center(
-                  child: CircularProgressIndicator(),
+                  child: CircularProgressIndicator(color: Colors.black),
                 ),
           bottomNavigationBar: widget.check == null
               ? SingleChildScrollView(

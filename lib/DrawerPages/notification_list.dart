@@ -273,7 +273,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                                 textColor: Colors.black),
                           )
                     : Center(
-                        child: CircularProgressIndicator(),
+                        child: CircularProgressIndicator(color: Colors.black),
                       )
               ],
             ),

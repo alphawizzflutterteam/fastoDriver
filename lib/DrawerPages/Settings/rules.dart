@@ -117,7 +117,7 @@ class _RulesRegulationState extends State<RulesRegulation> {
                           ),
                         );
                       })
-                  : CircularProgressIndicator(),
+                  : CircularProgressIndicator(color: Colors.black),
               SizedBox(
                 height: 80,
               )

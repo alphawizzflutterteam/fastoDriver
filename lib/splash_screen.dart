@@ -1,8 +1,6 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pristine_andaman_driver/Auth/Login/UI/login_page.dart';
-import 'package:pristine_andaman_driver/Theme/style.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen();
@@ -22,7 +20,7 @@ class SplashScreen extends StatelessWidget {
         children: [
           Container(
             width: MediaQuery.of(context).size.width,
-            height: (MediaQuery.of(context).size.height) / 1.0,//past 1.5
+            height: (MediaQuery.of(context).size.height) / 1.0,
             decoration: BoxDecoration(
               image: const DecorationImage(
                 image: AssetImage('assets/background.png'),

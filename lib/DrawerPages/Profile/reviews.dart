@@ -7,8 +7,6 @@ import 'package:pristine_andaman_driver/Routes/page_routes.dart';
 import 'package:pristine_andaman_driver/utils/ApiBaseHelper.dart';
 import 'package:pristine_andaman_driver/utils/Session.dart';
 import 'package:pristine_andaman_driver/utils/constant.dart';
-import 'package:pristine_andaman_driver/utils/widget.dart';
-import 'package:sizer/sizer.dart';
 
 import '../../Theme/style.dart';
 import '../../utils/colors.dart';
@@ -33,6 +31,7 @@ class _ReviewsPageState extends State<ReviewsPage> {
         "driver_id": curUserId,
         "type": type,
       };
+      print("get revies ${params}");
       Map response = await apiBase.postAPICall(
           Uri.parse(baseUrl1 + "payment/get_review"), params);
       setState(() {
@@ -83,12 +82,11 @@ class _ReviewsPageState extends State<ReviewsPage> {
         backgroundColor: MyColorName.colorBg1,
         centerTitle: true,
         title: Text('Rating',
-            style: Theme.of(context)
-                .textTheme
-                .headlineSmall!
-                .copyWith(fontSize: 22,
-              fontFamily:  AppTheme.fontFamily,
-              color: MyColorName.secondary,)),
+            style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+                  fontSize: 19,
+                  fontFamily: AppTheme.fontFamily,
+                  color: MyColorName.secondary,
+                )),
       ),
       body: FadedSlideAnimation(
         child: ListView(
@@ -194,237 +192,205 @@ class _ReviewsPageState extends State<ReviewsPage> {
             Padding(
               padding:
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
-              child: Text(
-                "Review",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineSmall!
-                    .copyWith(fontWeight: FontWeight.w600,fontFamily:AppTheme.fontFamily),
-              ),
+              child: Text("Review",
+                  style: TextStyle(
+                      fontSize: 15,
+                      color: Colors.black,
+                      fontWeight: FontWeight.w700)),
             ),
 
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16.0),
-              child: Container(
-                decoration: boxDecoration(radius: 10, showShadow: true),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Container(
-
-                      padding: EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-                      child: Row(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: Container(
-                              width: getWidth(80), height: getWidth(80),
-                              child: Image.asset(
-                                'assets/xuv.png',
-                                fit: BoxFit.cover,
-                              ),
-                              //  child: Image.network(path+reviewList[index].userImage.toString(),width: getWidth(80),height: getWidth(80),)
-                            ),
-                          ),
-                          SizedBox(width: 16),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                // reviewList[index].username.toString(),
-                                "UserName",
-                                style: Theme.of(context).textTheme.headlineSmall,
-                              ),
-                              SizedBox(
-                                height: 8,
-                              ),
-                              Text(
-                                //getDate1(reviewList[index].time),
-                                "date",
-                                style: Theme.of(context).textTheme.headlineSmall,
-                              ),
-                            ],
-                          ),
-                          Spacer(),
-                          Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            crossAxisAlignment: CrossAxisAlignment.end,
-                            children: [
-                              Container(
-                                padding: EdgeInsets.symmetric(
-                                    horizontal: 6, vertical: 2),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(30),
-                                  color: AppTheme.ratingsColor,
-                                ),
-                                child: Row(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    Text(
-                                      // reviewList[index].rating.toString(),
-                                      "rating",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .headlineSmall!
-                                          .copyWith(fontSize: 14),
-                                    ),
-                                    SizedBox(width: 4),
-                                    Icon(
-                                      Icons.star,
-                                      color: AppTheme.starColor,
-                                      size: 14,
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.only(left: 20, right: 16, bottom: 12),
-                     // color: Theme.of(context).colorScheme.background,
-                      child: Text(
-                        // reviewList[index].comment.toString(),
-                        'comment',
-                        style: Theme.of(context).textTheme.headlineSmall,
-                      ),
-                    ),
-                    SizedBox(height: 12),
-                  ],
-                ),
-              ),
-            ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            //   child: Container(
+            //     decoration: boxDecoration(radius: 10, showShadow: true),
+            //     child: Column(
+            //       crossAxisAlignment: CrossAxisAlignment.start,
+            //       children: [
+            //         Container(
+            //           padding:
+            //               EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+            //           child: Row(
+            //             children: [
+            //               Column(
+            //                 mainAxisAlignment: MainAxisAlignment.center,
+            //                 crossAxisAlignment: CrossAxisAlignment.start,
+            //                 children: [
+            //                   Text(
+            //                     // reviewList[index].username.toString(),
+            //                     "UserName",
+            //                     style: Theme.of(context).textTheme.bodySmall,
+            //                   ),
+            //                   SizedBox(
+            //                     height: 8,
+            //                   ),
+            //                   Text(
+            //                     //getDate1(reviewList[index].time),
+            //                     "date",
+            //                     style: Theme.of(context).textTheme.bodySmall,
+            //                   ),
+            //                 ],
+            //               ),
+            //               Spacer(),
+            //               Column(
+            //                 mainAxisAlignment: MainAxisAlignment.center,
+            //                 crossAxisAlignment: CrossAxisAlignment.end,
+            //                 children: [
+            //                   Container(
+            //                     padding: EdgeInsets.symmetric(
+            //                         horizontal: 6, vertical: 2),
+            //                     decoration: BoxDecoration(
+            //                       borderRadius: BorderRadius.circular(30),
+            //                       color: AppTheme.ratingsColor,
+            //                     ),
+            //                     child: Row(
+            //                       mainAxisSize: MainAxisSize.min,
+            //                       children: [
+            //                         Text(
+            //                           // reviewList[index].rating.toString(),
+            //                           "rating",
+            //                           style: Theme.of(context)
+            //                               .textTheme
+            //                               .bodySmall!
+            //                               .copyWith(fontSize: 14),
+            //                         ),
+            //                         SizedBox(width: 4),
+            //                         Icon(
+            //                           Icons.star,
+            //                           color: AppTheme.starColor,
+            //                           size: 14,
+            //                         )
+            //                       ],
+            //                     ),
+            //                   ),
+            //                 ],
+            //               ),
+            //             ],
+            //           ),
+            //         ),
+            //         Container(
+            //           padding: EdgeInsets.only(left: 20, right: 16, bottom: 12),
+            //           // color: Theme.of(context).colorScheme.background,
+            //           child: Text(
+            //             // reviewList[index].comment.toString(),
+            //             'comment',
+            //             style: Theme.of(context).textTheme.bodySmall,
+            //           ),
+            //         ),
+            //         SizedBox(height: 12),
+            //       ],
+            //     ),
+            //   ),
+            // ),
 
             !loading
-                ? reviewList.length > 0
+                ? reviewList.isNotEmpty
                     ? ListView.builder(
                         physics: NeverScrollableScrollPhysics(),
                         itemCount: reviewList.length,
                         shrinkWrap: true,
-                        itemBuilder: (context, index) => GestureDetector(
-                          onTap: () => Navigator.pushNamed(
-                              context, PageRoutes.rideInfoPage),
-                          child: Container(
-                            decoration:
-                                boxDecoration(radius: 10, showShadow: true),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Container(
-                                  height: 80,
-                                  padding: EdgeInsets.symmetric(
-                                      vertical: 12, horizontal: 16),
-                                  child: Row(
-                                    children: [
-                                      ClipRRect(
-                                        borderRadius: BorderRadius.circular(10),
-                                        child: Container(
-                                            width: getWidth(80),
-                                            height: getWidth(80),
-                                            child: Image.network(
-                                              path +
-                                                  reviewList[index]
-                                                      .userImage
-                                                      .toString(),
-                                              width: getWidth(80),
-                                              height: getWidth(80),
-                                            )),
-                                      ),
-                                      SizedBox(width: 16),
-                                      Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            reviewList[index]
-                                                .username
-                                                .toString(),
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .headlineSmall,
+                        itemBuilder: (context, index) {
+                          final review = reviewList[index];
+                          return GestureDetector(
+                            onTap: () => Navigator.pushNamed(
+                                context, PageRoutes.rideInfoPage),
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(12),
+                              ),
+                              elevation: 3,
+                              margin: EdgeInsets.symmetric(
+                                  vertical: 8, horizontal: 12),
+                              child: Padding(
+                                padding: EdgeInsets.all(12),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Row(
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 30,
+                                          backgroundImage: NetworkImage(
+                                            path + review.userImage.toString(),
                                           ),
-                                          SizedBox(
-                                            height: 8,
+                                          backgroundColor: Colors.grey[200],
+                                        ),
+                                        SizedBox(width: 16),
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                review.username.toString(),
+                                                style: Theme.of(context)
+                                                    .textTheme
+                                                    .titleMedium
+                                                    ?.copyWith(
+                                                        fontWeight:
+                                                            FontWeight.bold),
+                                              ),
+                                              SizedBox(height: 4),
+                                              Text(getDate1(review.time),
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontSize: 13)),
+                                            ],
                                           ),
-                                          Text(
-                                            getDate1(reviewList[index].time),
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .headlineSmall,
+                                        ),
+                                        Container(
+                                          padding: EdgeInsets.symmetric(
+                                              horizontal: 8, vertical: 4),
+                                          decoration: BoxDecoration(
+                                            color: AppTheme.ratingsColor,
+                                            borderRadius:
+                                                BorderRadius.circular(20),
                                           ),
-                                        ],
-                                      ),
-                                      Spacer(),
-                                      Column(
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.center,
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.end,
-                                        children: [
-                                          Container(
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 6, vertical: 2),
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(30),
-                                              color: AppTheme.ratingsColor,
-                                            ),
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.min,
-                                              children: [
-                                                Text(
-                                                  reviewList[index]
-                                                      .rating
-                                                      .toString(),
-                                                  style: Theme.of(context)
-                                                      .textTheme
-                                                      .headlineSmall!
-                                                      .copyWith(fontSize: 14),
-                                                ),
-                                                SizedBox(width: 4),
-                                                Icon(
-                                                  Icons.star,
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.min,
+                                            children: [
+                                              Text(
+                                                review.rating.toString(),
+                                                style: TextStyle(
+                                                    fontSize: 14,
+                                                    color: Colors.red,
+                                                    fontWeight:
+                                                        FontWeight.w600),
+                                              ),
+                                              SizedBox(width: 4),
+                                              Icon(Icons.star,
                                                   color: AppTheme.starColor,
-                                                  size: 14,
-                                                )
-                                              ],
-                                            ),
+                                                  size: 16),
+                                            ],
                                           ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
+                                        ),
+                                      ],
+                                    ),
+                                    SizedBox(height: 12),
+                                    Container(
+                                      child: Text(review.comment.toString(),
+                                          overflow: TextOverflow.ellipsis,
+                                          maxLines: 3,
+                                          style: TextStyle(
+                                              color: Colors.black,
+                                              fontSize: 13)),
+                                    ),
+                                  ],
                                 ),
-                                Container(
-                                  padding: EdgeInsets.only(
-                                      left: 20, right: 16, bottom: 12),
-                                  color:
-                                      Theme.of(context).colorScheme.background,
-                                  child: Text(
-                                    reviewList[index].comment.toString(),
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .headlineSmall,
-                                  ),
-                                ),
-                                SizedBox(height: 12),
-                              ],
+                              ),
                             ),
-                          ),
-                        ),
+                          );
+                        },
                       )
                     : Center(
-                        child: text(getTranslated(context, "Noreview")!,
-                            fontFamily: fontMedium,
-                            fontSize: 12.sp,
-                            textColor: Colors.black),
+                        child: Text(
+                          getTranslated(context, "Noreview")!,
+                          style: TextStyle(
+                              fontSize: 14, fontWeight: FontWeight.w500),
+                        ),
                       )
-                : Center(child: CircularProgressIndicator()),
+                : Center(
+                    child: CircularProgressIndicator(color: Colors.black),
+                  )
           ],
         ),
         beginOffset: Offset(0, 0.3),

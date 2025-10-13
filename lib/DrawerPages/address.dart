@@ -161,7 +161,7 @@ class _AddressScreenState extends State<AddressScreen> {
                                 isCentered: true,
                                 textColor: Colors.white)),
                       )
-                    : CircularProgressIndicator(),
+                    : CircularProgressIndicator(color: Colors.black),
               ),
               SizedBox(
                 height: 80,
